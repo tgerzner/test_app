@@ -4,6 +4,7 @@
     <list default="true" id="6ee9856b-6376-4725-9a4a-e136135739c6" name="Default" comment="" />
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,10 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="0.5946924">
+            <state line="29" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="-18.961538">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="0" selection-start="3791" selection-end="3791" vertical-scroll-proportion="0.5760095">
               <folding />
             </state>
           </provider>
@@ -43,6 +53,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/config.xml" />
       </list>
     </option>
   </component>
@@ -231,7 +242,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="0.5946924">
+        <state line="29" column="0" selection-start="982" selection-end="982" vertical-scroll-proportion="-18.961538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="3791" selection-end="3791" vertical-scroll-proportion="0.5760095">
           <folding />
         </state>
       </provider>
