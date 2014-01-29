@@ -1,31 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Device Properties Example</title>
+    <head>
+        <meta name="viewport" content="user-scalable=no,initial-scale=1, maximum-scale=1,minimum-scale=1, width=device-width" />
+        <title>PhoneGap Application</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css" />
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="cordova.js"></script>
+        <script type="text/javascript">
+            // Wait for PhoneGap to load
+            document.addEventListener("deviceready", onDeviceReady, false);
 
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    <script type="text/javascript" charset="utf-8">
+            $( document ).ready(function() {
+                $('button#get_photo').bind('click', function(e) {
+                    console.log('Get Photo');
+                });
+            });
 
-    // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+            // PhoneGap is ready
+            function onDeviceReady() {
+            }
 
-    // device APIs are available
-    //
-    function onDeviceReady() {
-        var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
-                            'Device Model: '    + device.model    + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
-    }
+                //If Success
+            function captureSuccess(mediaFiles) {
+                var i, len;
+                for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+                    uploadFile(mediaFiles[i]);
+                }
 
-    </script>
-  </head>
-  <body>
-  <h1>My Device Info:</h1>
-    <p id="deviceProperties">Loading device properties...</p>
-  </body>
+            }
+
+            //If Error
+            function captureError(error) {
+                var errMsg = 'An error occurred during capture: ' + error.code;
+                navigator.notification.alert(errMsg, null, 'Uh oh!');
+                alert('error');
+            }
+
+            //Call With Button
+            function takePhoto() {
+                navigator.device.capture.captureImage(captureSuccess, captureError);
+            }
+
+            //Upload To Server
+            function uploadFile(mediaFile) {
+                var ft = new FileTransfer(),
+                    path = mediaFile.fullPath,
+                    name = mediaFile.name;
+
+                ft.upload(path,
+                    "http://see--you.ch/photos/upload.php",
+                    function(result) {
+                        console.log('Upload success: ' + result.responseCode);
+                        console.log(result.bytesSent + ' bytes sent');
+                    },
+                    function(error) {
+                        console.log('Error uploading image ' + path + ': ' + error.code);
+                    },
+                    { fileName: name });
+            }
+
+
+            //Get Location
+            function get_geolocation(){
+                console.log('Get Geolocation');
+                navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
+                return
+            }
+
+            // Get lat, lon, time
+            function geoloc_onSuccess(position) {
+                var lat = position.coords.latitude
+                var lon = position.coords.longitude
+                var time = position.coords.timestamp
+                console.log(time);
+                console.log(lat);
+                console.log(lon);
+            }
+
+            // If an error occurs
+            function geoloc_onError(error) {
+                var errString = '';
+                if (error.code) {
+                    switch (error.code) {
+                        case 1:
+                            errString =
+                                    'We do not have permission';
+                            break;
+                        case 2:
+                            errString =
+                                    'The location can not be determined';
+                            break;
+                        case 3:
+                            errString =
+                                    'There was a timeout';
+                            break;
+                        default:
+                            errString =
+                                    'Unknown error';
+                            break
+                    }
+                }
+            }
+
+
+
+        </script>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>See You</h1>
+            </div><!-- /header -->
+
+            <div data-role="content">
+
+               <button onclick="takePhoto()">Take Photo</button>
+               <br />
+                <button onclick="getPhoto()">Get Photo</button>
+               <br />
+                <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />
+                <br />
+                <img style="display: none;width: 200px;height: 190px;" id="urlImage" src="" />
+                <br />
+                 <button onclick="get_geolocation();">Get Geolocation</button>
+                <br />
+
+                <div id="message"></div>
+                <br />
+            </div><!-- /content -->
+            <div id="footer" data-role="footer">
+                <h4><span>Copyright &copy; 2014</span></h4>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+    </body>
 </html>
