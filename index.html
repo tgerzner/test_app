@@ -26,9 +26,10 @@
             function captureSuccess(mediaFiles) {
                 alert("captureSuccess");
                 //var i, len;
-                //for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-                uploadFile(mediaFiles);
-                //}
+                for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+                    alert(mediaFiles[i].fullPath);
+                    uploadFile(mediaFiles[i]);
+                }
 
             }
 
