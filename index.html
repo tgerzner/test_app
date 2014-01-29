@@ -24,6 +24,7 @@
 
                 //If Success
             function captureSuccess(mediaFiles) {
+                alert("captureSuccess")
                 var i, len;
                 for (i = 0, len = mediaFiles.length; i < len; i += 1) {
                     uploadFile(mediaFiles[i]);
@@ -40,7 +41,9 @@
 
             //Call With Button
             function takePhoto() {
+                alert("aaa")
                 navigator.device.capture.captureImage(captureSuccess, captureError);
+                alert("bbb")
             }
 
             //Upload To Server
@@ -48,6 +51,7 @@
                 var ft = new FileTransfer(),
                     path = mediaFile.fullPath,
                     name = mediaFile.name;
+                alert("uploadFile")
 
                 ft.upload(path,
                     "http://see--you.ch/photos/upload.php",
