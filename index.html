@@ -25,17 +25,17 @@
                 //If Success
             function captureSuccess(mediaFiles) {
                 alert("captureSuccess")
-                var i, len;
-                for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-                    uploadFile(mediaFiles[i]);
-                }
+                //var i, len;
+                //for (i = 0, len = mediaFiles.length; i < len; i += 1) {
+                //    uploadFile(mediaFiles[i]);
+                //}
 
             }
 
             //If Error
             function captureError(error) {
-                var errMsg = 'An error occurred during capture: ' + error.code;
-                navigator.notification.alert(errMsg, null, 'Uh oh!');
+                //var errMsg = 'An error occurred during capture: ' + error.code;
+                //navigator.notification.alert(errMsg, null, 'Uh oh!');
                 alert('error');
             }
 
@@ -43,7 +43,7 @@
             function takePhoto() {
                 alert("aaa")
                 navigator.device.capture.captureImage(captureSuccess, captureError);
-                alert("bbb")
+                alert("captureSuccess")
             }
 
             //Upload To Server
