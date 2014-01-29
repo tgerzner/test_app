@@ -24,10 +24,10 @@
 
                 //If Success
             function captureSuccess(mediaFiles) {
-                alert("captureSuccess")
+                alert("captureSuccess");
                 //var i, len;
                 //for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-                //    uploadFile(mediaFiles[i]);
+                uploadFile(mediaFiles);
                 //}
 
             }
@@ -41,17 +41,18 @@
 
             //Call With Button
             function takePhoto() {
-                alert("aaa")
+                alert("aaa");
                 navigator.device.capture.captureImage(captureSuccess, captureError);
-                alert("captureSuccess")
+                alert("captureSuccess");
             }
 
             //Upload To Server
             function uploadFile(mediaFile) {
+                alert("ccc");
                 var ft = new FileTransfer(),
                     path = mediaFile.fullPath,
                     name = mediaFile.name;
-                alert("uploadFile")
+                alert("uploadFile");
 
                 ft.upload(path,
                     "http://see--you.ch/photos/upload.php",
