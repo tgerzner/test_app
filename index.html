@@ -43,7 +43,7 @@
             //Call With Button
             function takePhoto() {
                 alert("aaa");
-                navigator.device.capture.captureImage(captureSuccess, captureError);
+                navigator.device.capture.captureImage(captureSuccess, captureError, {quality:50});
                 alert("captureSuccess");
             }
 
