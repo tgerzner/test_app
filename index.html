@@ -32,7 +32,7 @@
                 alert("load Photo")
                 var uriImage = document.getElementById('dataImage');
                 uriImage.style.display = 'block';
-
+                imageURI = ""
                 //Photos aus dem lokalen Speicher holen
 
                 for (var i = 0; i < localStorage.length; i++){
@@ -42,7 +42,12 @@
                         alert(imageURI)
                     }
                 }
-                uriImage.src= imageURI;
+                if (imageURI == ""){
+                    alert("no Picture")
+                }
+                else{
+                    uriImage.src= imageURI;
+                }
             }
 
             //If we get an image
@@ -123,6 +128,8 @@
 
             <div data-role="content">
                 <button onclick="getPhoto()">Get Photo</button>
+               <br />
+                <button onclick="displayPhotos()">Display Photos</button>
                <br />
                 <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />
                 <br />
