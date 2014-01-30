@@ -59,7 +59,7 @@
                 alert("onPhotoSucces")
 
                 //Pfad in den lokalen Speicher kopieren
-                lat, lon = get_geolocation()
+                //lat, lon = get_geolocation()
                 alert(lon)
                 alert("Weiter")
                 var newDate = new Date();
@@ -88,6 +88,7 @@
                 var options = new FileUploadOptions();
                 options.fileKey="file";
                 options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+                alert(options.fileName)
                 options.mimeType="image/jpeg";
 
                 var params = new Object();
@@ -137,17 +138,15 @@
             function get_geolocation(){
                 alert('Get Geolocation');
                 lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
-                alert(lon)
+                alert("dfgbf")
                 return lat, lon
             }
 
             // Get lat, lon, time
-            function geoloc_onSuccess(position) {
+            function geoloc_onSuccess(position,aaa) {
                 lat = position.coords.latitude
                 lon = position.coords.longitude
-                var time = position.coords.timestamp
-                alert(lon)
-                console.log(time);
+                alert(aaa)
                 console.log(lat);
                 console.log(lon);
                 return lat, lon
