@@ -5,7 +5,7 @@
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
-    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391078673204" ignored="false" />
+    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391078887965" ignored="false" />
     <file path="/main.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391072699288" ignored="false" />
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391000431205" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="21" selection-start="5879" selection-end="5879" vertical-scroll-proportion="0.7046632">
+            <state line="92" column="51" selection-start="3595" selection-end="3595" vertical-scroll-proportion="-0.30362695">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -406,16 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/log.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.2815735">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="78" selection-start="1784" selection-end="1825" vertical-scroll-proportion="-26.153847">
@@ -437,9 +427,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/log.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.25731584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="21" selection-start="5879" selection-end="5879" vertical-scroll-proportion="0.7046632">
+        <state line="92" column="51" selection-start="3595" selection-end="3595" vertical-scroll-proportion="-0.30362695">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
