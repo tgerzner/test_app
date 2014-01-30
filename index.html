@@ -12,61 +12,62 @@
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
 
-            $( document ).ready(function() {
-                $('button#get_photo').bind('click', function(e) {
-                    console.log('Get Photo');
-                });
-            });
-
             // PhoneGap is ready
             function onDeviceReady() {
             }
 
-                //If Success
-            function captureSuccess(mediaFiles) {
-                alert("captureSuccess");
-                //var i, len;
-                for (i = 0, len = mediaFiles.length; i < len; i += 1) {
-                    alert(mediaFiles[i].fullPath);
-                    uploadFile(mediaFiles[i]);
+
+            //Get Photo
+            function getPhoto(source){
+                alert("GetPhoto")
+                navigator.camera.getPicture(onPhotoURISuccess,onError,{
+                    quality:50,
+                    destinationType: destinationType.FILE_URL,
+                    sourceType: source,
+                    saveToPhotoAlbum: true
+                });
+            }
+
+            function displayPhotos(){
+                alert("load Photo")
+                var uriImage = document.getElementById('dataImage');
+                uriImage.style.display = 'block';
+
+                //Photos aus dem lokalen Speicher holen
+
+                for (var i = 0; i < localStorage.length; i++){
+                    alert(localStorage.key(i));
+                    if (localStorage.key(i).split("_",1) == "SeeYou"){
+                        imageURI = localStorage.getItem(localStorage.key(i));
+                        alert(imageURI)
+                    }
                 }
-
+                uriImage.src= imageURI;
             }
 
-            //If Error
-            function captureError(error) {
-                //var errMsg = 'An error occurred during capture: ' + error.code;
-                //navigator.notification.alert(errMsg, null, 'Uh oh!');
-                alert('error');
+            //If we get an image
+            function onPhotoURISuccess(imageURI){
+                alert("onPhotoSucces")
+
+                //Pfad in den lokalen Speicher kopieren
+                var newDate = new Date();
+                var photoId = newDate.getTime();
+                photoId = "SeeYou_" + photoId
+                alert(photoId)
+                try {
+                    localStorage.setItem(photoId, imageURI);
+                    alert("Photo gespeichert")
+                } catch (e) {
+                    if (e == QUOTA_EXCEEDED_ERR) {
+                        alert('Quota exceeded!');
+                    }
+                }
             }
 
-            //Call With Button
-            function takePhoto() {
-                alert("aaa");
-                navigator.device.capture.captureImage(captureSuccess, captureError, {quality:50});
-                alert("captureSuccess");
+            //Handle Errors
+            function onError(error){
+                alert("Error: " + error);
             }
-
-            //Upload To Server
-            function uploadFile(mediaFile) {
-                alert("ccc");
-                var ft = new FileTransfer(),
-                    path = mediaFile.fullPath,
-                    name = mediaFile.name;
-                alert("uploadFile");
-
-                ft.upload(path,
-                    "http://see--you.ch/photos/upload.php",
-                    function(result) {
-                        console.log('Upload success: ' + result.responseCode);
-                        console.log(result.bytesSent + ' bytes sent');
-                    },
-                    function(error) {
-                        console.log('Error uploading image ' + path + ': ' + error.code);
-                    },
-                    { fileName: name });
-            }
-
 
             //Get Location
             function get_geolocation(){
@@ -121,9 +122,6 @@
             </div><!-- /header -->
 
             <div data-role="content">
-
-               <button onclick="takePhoto()">Take Photo</button>
-               <br />
                 <button onclick="getPhoto()">Get Photo</button>
                <br />
                 <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />

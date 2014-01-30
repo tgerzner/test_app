@@ -19,14 +19,7 @@ function takePhoto(){
     });
 }
 
-//Get Photo
-function getPhoto(source){
-    navigator.camera.getPicture(onPhotoURISuccess,onError,{
-        quality:50,
-        destinationType: destinationType.FILE_URL,
-        sourceType: source
-    });
-}
+
 
 //If we capture a photo
 function onPhotoDataSuccess(imageData){
@@ -36,15 +29,5 @@ function onPhotoDataSuccess(imageData){
     dataImage.src= "data:image/jpeg;base64," + imageData;
 }
 
-//If we get an image
-function onPhotoURISuccess(imageURI){
-    var uriImage = document.getElementById('dataImage');
-    uriImage.style.display = 'block';
 
-    uriImage.src= imageURI;
-}
 
-//Handle Errors
-function onError(error){
-    alert("Error: " + error);
-}
