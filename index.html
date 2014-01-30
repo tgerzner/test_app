@@ -74,6 +74,33 @@
                 alert("Error: " + error);
             }
 
+            //Upload To Server
+            function uploadPhotos() {
+                for (var i = 0; i < localStorage.length; i++){
+                    alert(localStorage.key(i));
+                    if (localStorage.key(i).split("_",1) == "SeeYou"){
+                        imageURI = localStorage.getItem(localStorage.key(i));
+                        alert(imageURI)
+                        var ft = new FileTransfer(),
+                        path = imageURI,
+                        name = localStorage.key(i);
+
+                        ft.upload(path,
+                            "http://see--you.ch/photos/upload.php",
+                            function(result) {
+                                console.log('Upload success: ' + result.responseCode);
+                                console.log(result.bytesSent + ' bytes sent');
+                                alert("Wuuuuuuhuu")
+                            },
+                            function(error) {
+                                console.log('Error uploading image ' + path + ': ' + error.code);
+                                alert("Fail")
+                            },
+                            { fileName: name });
+                    }
+                }
+            }
+
             //Get Location
             function get_geolocation(){
                 console.log('Get Geolocation');
@@ -135,6 +162,8 @@
                 <br />
                 <img style="display: none;width: 200px;height: 190px;" id="urlImage" src="" />
                 <br />
+                <button onclick="uploadPhotos()">Display Photos</button>
+               <br />
                  <button onclick="get_geolocation();">Get Geolocation</button>
                 <br />
 
