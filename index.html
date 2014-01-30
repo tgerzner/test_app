@@ -84,7 +84,7 @@
                 alert(imageURI)
 
                 var ft = new FileTransfer();
-                ft.upload("bababa",
+                ft.upload(imageURI,
                         encodeURI("http://see--you.ch/photos/upload.php"),
                         function(result) {
                                 alert("Wuuuuuuhuu");
@@ -113,7 +113,7 @@
                         name = localStorage.key(i);
 
                         ft.upload(path,
-                            "http://see--you.ch/photos/upload.php",
+                            encodeURI("http://see--you.ch/photos/upload.php"),
                             function(result) {
                                 console.log('Upload success: ' + result.responseCode);
                                 console.log(result.bytesSent + ' bytes sent');
