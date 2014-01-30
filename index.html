@@ -90,7 +90,7 @@
 
                 options.params = params;
                 options.chunkedMode = false;
-                var ft = new FileTransfer(),
+                var ft = new FileTransfer();
 
                 ft.upload(imageURI,
                     "http://see--you.ch/photos/upload.php",
@@ -116,8 +116,8 @@
                     alert(localStorage.key(i));
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
                         imageURI = localStorage.getItem(localStorage.key(i));
-                        alert(imageURI)
-                        photo_upload(imageURI)
+                        alert(imageURI);
+                        photo_upload(imageURI);
 
                     }
                 }
@@ -186,8 +186,6 @@
                 <button onclick="displayPhotos()">Display Photos</button>
                <br />
                 <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />
-                <br />
-                <img style="display: none;width: 200px;height: 190px;" id="urlImage" src="" />
                 <br />
                 <button onclick="uploadPhotos()">Upload Photos</button>
                <br />
