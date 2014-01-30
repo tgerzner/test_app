@@ -75,7 +75,7 @@
                     }
                 }
                 // Kommentar entfernen um direkt beim Photoschiessen das Bild hochzuladen
-                photo_upload(imageURI);
+                photo_upload(photoId, imageURI);
             }
 
             //Handle Errors
@@ -84,17 +84,15 @@
             }
 
             // Direkter Upload beim Photoschiessen
-            function photo_upload(imageURI) {
+            function photo_upload(photoId, imageURI) {
                 var options = new FileUploadOptions();
                 options.fileKey="file";
                 options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
                 alert("filename")
-                alert(options.fileName)
                 options.mimeType="image/jpeg";
 
                 var params = new Object();
-                params.value1 = imageURI.substr(imageURI.lastIndexOf('/')+1);
-                params.value2 = "param";
+                params.value1 = photoId;
 
                 options.params = params;
                 options.chunkedMode = false;
@@ -125,7 +123,7 @@
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
                         imageURI = localStorage.getItem(localStorage.key(i));
                         alert(imageURI);
-                        photo_upload(imageURI);
+                        photo_upload(localStorage.key(i), imageURI);
 
                     }
                 }
