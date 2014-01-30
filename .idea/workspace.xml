@@ -5,7 +5,7 @@
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
-    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391078887965" ignored="false" />
+    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391088502302" ignored="false" />
     <file path="/main.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391072699288" ignored="false" />
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391000431205" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="51" selection-start="3595" selection-end="3595" vertical-scroll-proportion="-0.30362695">
+            <state line="85" column="35" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.19378239">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -53,7 +53,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="78" selection-start="1784" selection-end="1825" vertical-scroll-proportion="-26.153847">
+            <state line="42" column="12" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
@@ -406,20 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="78" selection-start="1784" selection-end="1825" vertical-scroll-proportion="-26.153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S2 - Capture Image/Program Files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="889" selection-end="1487" vertical-scroll-proportion="-20.26923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -437,9 +423,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S2 - Capture Image/Program Files/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="889" selection-end="1487" vertical-scroll-proportion="-20.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="1617" selection-end="1617" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="51" selection-start="3595" selection-end="3595" vertical-scroll-proportion="-0.30362695">
+        <state line="85" column="35" selection-start="3038" selection-end="3038" vertical-scroll-proportion="0.19378239">
           <folding>
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
