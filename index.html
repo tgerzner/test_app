@@ -9,6 +9,10 @@
         <script src="js/main.js"></script>
         <script src="cordova.js"></script>
         <script type="text/javascript">
+            //Parameter
+            lat = 0;
+            lon = 0;
+
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -56,6 +60,8 @@
 
                 //Pfad in den lokalen Speicher kopieren
                 lat, lon = get_geolocation()
+                alert(lon)
+                alert("Weiter")
                 var newDate = new Date();
                 var photoId = newDate.getTime();
                 photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
@@ -129,16 +135,18 @@
 
             //Get Location
             function get_geolocation(){
-                console.log('Get Geolocation');
+                alert('Get Geolocation');
                 lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
+                alert(lon)
                 return lat, lon
             }
 
             // Get lat, lon, time
             function geoloc_onSuccess(position) {
-                var lat = position.coords.latitude
-                var lon = position.coords.longitude
+                lat = position.coords.latitude
+                lon = position.coords.longitude
                 var time = position.coords.timestamp
+                alert(lon)
                 console.log(time);
                 console.log(lat);
                 console.log(lon);
