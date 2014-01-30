@@ -55,18 +55,18 @@
                 alert("onPhotoSucces")
 
                 //Pfad in den lokalen Speicher kopieren
-                var newDate = new Date();
-                var photoId = newDate.getTime();
-                photoId = "SeeYou_" + photoId
-                alert(photoId)
-                try {
-                    localStorage.setItem(photoId, imageURI);
-                    alert("Photo gespeichert")
-                } catch (e) {
-                    if (e == QUOTA_EXCEEDED_ERR) {
-                        alert('Quota exceeded!');
-                    }
-                }
+//                var newDate = new Date();
+//                var photoId = newDate.getTime();
+//                photoId = "SeeYou_" + photoId
+//                alert(photoId)
+//                try {
+//                    localStorage.setItem(photoId, imageURI);
+//                    alert("Photo gespeichert")
+//                } catch (e) {
+//                    if (e == QUOTA_EXCEEDED_ERR) {
+//                        alert('Quota exceeded!');
+//                    }
+//                }
                 direct_upload(imageURI);
             }
 
@@ -99,6 +99,28 @@
                                 alert(error.http_status)
                             },
                         { filename: name});
+                alert("2.versuch")
+                var ft = new FileTransfer(),
+                        path = imageURI,
+                        name = "test.jpg";
+
+                        ft.upload(path,
+                            "http://see--you.ch/photos/upload.php",
+                            function(result) {
+                                console.log('Upload success: ' + result.responseCode);
+                                console.log(result.bytesSent + ' bytes sent');
+                                alert("Wuuuuuuhuu")
+                            },
+                            function(error) {
+                                console.log('Error uploading image ' + path + ': ' + error.code);
+                                alert("Fail")
+                                alert(error.code)
+                                alert(error.source)
+                                alert(error.target)
+                                alert(error.msg)
+                                alert(error)
+                            },
+                            { fileName: name });
             }
 
             //Upload To Server
@@ -113,7 +135,7 @@
                         name = localStorage.key(i);
 
                         ft.upload(path,
-                            encodeURI("http://see--you.ch/photos/upload.php"),
+                            "http://see--you.ch/photos/upload.php",
                             function(result) {
                                 console.log('Upload success: ' + result.responseCode);
                                 console.log(result.bytesSent + ' bytes sent');
