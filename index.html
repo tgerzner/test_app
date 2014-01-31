@@ -22,11 +22,15 @@
                 var project = localStorage.getItem("project");
                 if (project!=null){
                     $('button#project').innerHTML = "Von Projekt abmelden";
-                    console.log(document.getElementById("project").innerHTML)
                     document.getElementById("project").innerHTML = "Abmelden"
+                    $("#project").val("Abmelden").button("refresh");
                     document.getElementById("title").innerHTML = "See You : " + project
-                    console.log(document.getElementById("title").innerHTML)
-                };
+                }
+                else{
+                    document.getElementById("project").innerHTML = "An Projekt anmelden";
+                    $("#project").val("An Projekt anmelden").button("refresh");
+                }
+
             }
 
 
@@ -84,7 +88,13 @@
                     }
                 }
                 // Kommentar entfernen um direkt beim Photoschiessen das Bild hochzuladen
-                photo_upload(photoId, imageURI);
+/*                var project = localStorage.getItem("project");
+                if (project != null){
+                    photo_upload(photoId, imageURI, project);
+                }
+                else{
+                    alert("Bitte melden sie sich zuerst an ein Projekt an")
+                }*/
             }
 
             //Handle Errors
@@ -93,7 +103,7 @@
             }
 
             // Direkter Upload beim Photoschiessen
-            function photo_upload(photoId, imageURI) {
+            function photo_upload(photoId, imageURI, project) {
                 var options = new FileUploadOptions();
                 options.fileKey="file";
                 options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
@@ -102,6 +112,7 @@
 
                 var params = new Object();
                 params.value1 = photoId;
+                params.value2 = project;
 
                 options.params = params;
                 options.chunkedMode = false;
@@ -127,14 +138,20 @@
 
             //Upload To Server
             function uploadPhotos() {
-                for (var i = 0; i < localStorage.length; i++){
-                    alert(localStorage.key(i));
-                    if (localStorage.key(i).split("_",1) == "SeeYou"){
-                        imageURI = localStorage.getItem(localStorage.key(i));
-                        alert(imageURI);
-                        photo_upload(localStorage.key(i), imageURI);
+                var project = localStorage.getItem("project");
+                if (project != null){
+                    for (var i = 0; i < localStorage.length; i++){
+                        alert(localStorage.key(i));
+                        if (localStorage.key(i).split("_",1) == "SeeYou"){
+                            imageURI = localStorage.getItem(localStorage.key(i));
+                            alert(imageURI);
+                            photo_upload(localStorage.key(i), imageURI, project);
 
+                        }
                     }
+                }
+                else{
+                    alert("Bitte melden sie sich zuerst an ein Projekt an")
                 }
             }
 
@@ -196,18 +213,26 @@
                     if (proj!=null){
                         localStorage.setItem("project", proj);
                     }
-                    document.getElementById("project").innerHTML = "Abmelden"
-                    document.getElementById("title").innerHTML = "See You : " + project
+                    document.getElementById("project").innerHTML = "Abmelden";
+                    $("#project").val("Abmelden").button("refresh");
+                    document.getElementById("title").innerHTML = "See You : " + proj
                 }
                 else{
                     localStorage.removeItem("project")
-                    document.getElementById("project").innerHTML = "An Projekt anmelden"
+                    document.getElementById("project").innerHTML = "An Projekt anmelden";
+                    $("#project").val("An Projekt anmelden").button("refresh");
                     document.getElementById("title").innerHTML = "See You"
                 }
+                $("#project").val("gfhf").button("refresh");
             }
 
-
-
+        // Todo
+        // Anmeldung beim Server mit Projektkuerzel und Passwort
+        // Geolocation in den Dateinamen schreiben
+        // Datei in den richtigen Ordner schreiben
+        // Bild in See You darstellen
+        // Photogallerie ????
+        // Styling
 
         </script>
     </head>
@@ -231,7 +256,7 @@
 
                  <button onclick="get_geolocation();">Get Geolocation</button>
                 <br />
-                <button onclick="get_project();" id="project">An Projekt anmelden</button>
+                <button id="project" onclick="get_project();" >An Projekt anmelden</button>
                 <br />
 
                 <div id="message"></div>
