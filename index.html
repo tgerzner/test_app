@@ -36,7 +36,6 @@
 
             //Get Photo
             function getPhoto(source){
-                alert("GetPhoto")
                 navigator.camera.getPicture(onPhotoURISuccess,onError,{
                     quality:50,
                     destinationType: destinationType.FILE_URL,
@@ -46,17 +45,14 @@
             }
 
             function displayPhotos(){
-                alert("load Photo")
                 var uriImage = document.getElementById('dataImage');
                 uriImage.style.display = 'block';
                 imageURI = ""
                 //Photos aus dem lokalen Speicher holen
 
                 for (var i = 0; i < localStorage.length; i++){
-                    alert(localStorage.key(i));
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
                         imageURI = localStorage.getItem(localStorage.key(i));
-                        alert(imageURI)
                     }
                 }
                 if (imageURI == ""){
@@ -72,13 +68,14 @@
                 alert("onPhotoSucces")
 
                 //Pfad in den lokalen Speicher kopieren
-                //lat, lon = get_geolocation()
-                alert(lon)
-                alert("Weiter")
+                get_geolocation(imageURI)
+
+            }
+
+            function save_photo(imageURI, lat, lon){
                 var newDate = new Date();
                 var photoId = newDate.getTime();
                 photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
-                alert(photoId)
                 try {
                     localStorage.setItem(photoId, imageURI);
                     alert("Photo gespeichert")
@@ -107,7 +104,6 @@
                 var options = new FileUploadOptions();
                 options.fileKey="file";
                 options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
-                alert("filename")
                 options.mimeType="image/jpeg";
 
                 var params = new Object();
@@ -127,11 +123,6 @@
                     },
                     function(error) {
                         alert("Fail")
-                        alert(error.code)
-                        alert(error.source)
-                        alert(error.target)
-                        alert(error.msg)
-                        alert(error)
                     },
                     options);
             }
@@ -141,10 +132,8 @@
                 var project = localStorage.getItem("project");
                 if (project != null){
                     for (var i = 0; i < localStorage.length; i++){
-                        alert(localStorage.key(i));
                         if (localStorage.key(i).split("_",1) == "SeeYou"){
                             imageURI = localStorage.getItem(localStorage.key(i));
-                            alert(imageURI);
                             photo_upload(localStorage.key(i), imageURI, project);
 
                         }
@@ -164,44 +153,41 @@
             }
 
             //Get Location
-            function get_geolocation(){
-                alert('Get Geolocation');
+            function get_geolocation(imageURU){
                 lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
-                alert("dfgbf")
                 return lat, lon
-            }
 
-            // Get lat, lon, time
-            function geoloc_onSuccess(position,aaa) {
-                lat = position.coords.latitude
-                lon = position.coords.longitude
-                alert(aaa)
-                console.log(lat);
-                console.log(lon);
-                return lat, lon
-            }
+                // Get lat, lon, time
+                function geoloc_onSuccess(position) {
+                    lat = position.coords.latitude
+                    lon = position.coords.longitude
+                    console.log(lat);
+                    console.log(lon);
+                    save_photo(imageURI, lat, lon)
+                }
 
-            // If an error occurs
-            function geoloc_onError(error) {
-                var errString = '';
-                if (error.code) {
-                    switch (error.code) {
-                        case 1:
-                            errString =
-                                    'We do not have permission';
-                            break;
-                        case 2:
-                            errString =
-                                    'The location can not be determined';
-                            break;
-                        case 3:
-                            errString =
-                                    'There was a timeout';
-                            break;
-                        default:
-                            errString =
-                                    'Unknown error';
-                            break
+                // If an error occurs
+                function geoloc_onError(error) {
+                    var errString = '';
+                    if (error.code) {
+                        switch (error.code) {
+                            case 1:
+                                errString =
+                                        'We do not have permission';
+                                break;
+                            case 2:
+                                errString =
+                                        'The location can not be determined';
+                                break;
+                            case 3:
+                                errString =
+                                        'There was a timeout';
+                                break;
+                            default:
+                                errString =
+                                        'Unknown error';
+                                break
+                        }
                     }
                 }
             }
@@ -253,9 +239,6 @@
                <br />
                 <button onclick="deletePhotos()">Delete Photos</button>
                <br />
-
-                 <button onclick="get_geolocation();">Get Geolocation</button>
-                <br />
                 <button id="project" onclick="get_project();" >An Projekt anmelden</button>
                 <br />
 

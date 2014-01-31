@@ -5,7 +5,7 @@
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
-    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391161561966" ignored="false" />
+    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391164921157" ignored="false" />
     <file path="/main.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391072699288" ignored="false" />
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391162243720" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
@@ -29,10 +29,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="40" selection-start="4549" selection-end="4549" vertical-scroll-proportion="-10.666667">
+            <state line="60" column="21" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.36914894">
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -43,7 +43,7 @@
       <file leaf-file-name="error.log" pinned="false" current="false" current-in-tab="false">
         <entry file="file://D:/error.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="990" column="110" selection-start="154245" selection-end="154298" vertical-scroll-proportion="0.0">
+            <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/upload.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="462" selection-end="462" vertical-scroll-proportion="0.25731584">
+            <state line="15" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,10 +128,10 @@
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$USER_HOME$/Desktop/test.js" />
         <option value="D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html" />
-        <option value="D:/error.log" />
         <option value="$USER_HOME$/Desktop/test.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+        <option value="D:/error.log" />
         <option value="$USER_HOME$/Desktop/upload.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -399,13 +399,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="990" column="110" selection-start="154245" selection-end="154298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="39" selection-start="73" selection-end="73" vertical-scroll-proportion="-1.9615384">
@@ -434,19 +427,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://D:/error.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="40" selection-start="4549" selection-end="4549" vertical-scroll-proportion="-10.666667">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="462" selection-end="462" vertical-scroll-proportion="0.25731584">
+        <state line="15" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="21" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.36914894">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
