@@ -78,6 +78,8 @@
                 photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
                 try {
                     localStorage.setItem(photoId, imageURI);
+                    alert(photoId)
+                    alert(imageURI)
                     alert("Photo gespeichert")
                 } catch (e) {
                     if (e == QUOTA_EXCEEDED_ERR) {
@@ -163,6 +165,7 @@
                     lon = position.coords.longitude
                     console.log(lat);
                     console.log(lon);
+                    alert(lat)
                     save_photo(imageURI, lat, lon)
                 }
 
