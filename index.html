@@ -156,10 +156,9 @@
             }
 
             //Get Location
-            function get_geolocation(imageURU){
+            function get_geolocation(imageURI){
                 alert("Get Geoloc")
                 lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
-                return lat, lon
 
                 // Get lat, lon, time
                 function geoloc_onSuccess(position) {
