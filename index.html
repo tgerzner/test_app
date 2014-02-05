@@ -201,12 +201,20 @@
                 var project = localStorage.getItem("project");
                 if (project == null){
                     var proj=prompt("Geben sie bitte das Projektkürzel ein","");
-                    if (proj!=null){
-                        localStorage.setItem("project", proj);
-                    }
-                    document.getElementById("project").innerHTML = "Abmelden";
-                    $("#project").val("Abmelden").button("refresh");
-                    document.getElementById("title").innerHTML = "See You : " + proj
+                    var passwd = prompt("Geben sie bitte das Passwort ein");
+                    var seeYouUrl = "http://app.see--you.ch/applogin/?project=" + proj + "&pw=" + passwd;
+                    $.ajax({url: seeYouUrl, success:function(result){
+                        if (result == "<h1>True</h1>"){
+                            localStorage.setItem("project", proj);
+                            document.getElementById("project").innerHTML = "Abmelden";
+                            $("#project").val("Abmelden").button("refresh");
+                            document.getElementById("title").innerHTML = "See You : " + proj
+                        }
+                        else {
+                            alert("Kein korrektes Login")
+                        };
+                    }})
+
                 }
                 else{
                     localStorage.removeItem("project")
@@ -219,9 +227,6 @@
 
         // Todo
         // Anmeldung beim Server mit Projektkuerzel und Passwort
-        // Geolocation in den Dateinamen schreiben
-        // Datei in den richtigen Ordner schreiben
-        // Bild in See You darstellen
         // Photogallerie ????
         // Styling
 
