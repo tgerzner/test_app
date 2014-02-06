@@ -28,7 +28,7 @@
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
                         imageURI = localStorage.getItem(localStorage.key(i));
                         alert(imageURI)
-                        $("photos").append('<img style="display: block;width: 200px;height: 190px;" src="' + imageURI + '" />')
+                        $(".photos").append('<img style="display: block;width: 200px;height: 190px;" src="' + imageURI + '" />')
                     }
                 }
                 if (imageURI == ""){
@@ -48,7 +48,6 @@
             <div data-role="content">
                 <h2>Photos</h2>
                 <div class='photos'></div>
-            <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />
 
                 <div id="message"></div>
                 <br />
