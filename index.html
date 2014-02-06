@@ -46,7 +46,10 @@
             }
 
             function displayPhotos(){
+                parent.location='photogallery.html'
+                /*
                 var uriImage = document.getElementById('dataImage');
+
                 uriImage.style.display = 'block';
                 imageURI = ""
                 //Photos aus dem lokalen Speicher holen
@@ -62,6 +65,7 @@
                 else{
                     uriImage.src= imageURI;
                 }
+                */
             }
 
             //If we get an image
@@ -122,10 +126,11 @@
                     function(result) {
                         console.log('Upload success: ' + result.responseCode);
                         console.log(result.bytesSent + ' bytes sent');
-                        alert("Wuuuuuuhuu")
+                        alert("Photo auf Server geladen")
                     },
                     function(error) {
                         alert("Fail")
+
                     },
                     options);
             }
@@ -241,7 +246,7 @@
             <div data-role="content">
                 <button onclick="getPhoto()">Get Photo</button>
                <br />
-                <button onclick="displayPhotos()">Display Photos</button>
+                <button onclick="displayPhotos()">Photogallery</button>
                <br />
                 <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />
                 <br />
