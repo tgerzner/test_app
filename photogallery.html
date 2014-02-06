@@ -27,7 +27,8 @@
                 for (var i = 0; i < localStorage.length; i++){
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
                         imageURI = localStorage.getItem(localStorage.key(i));
-                        $("photos").append('<img style="display: none;width: 200px;height: 190px;" id="dataImage" src="' + imageURI + '" />')
+                        alert(imageURI)
+                        $("photos").append('<img style="display: block;width: 200px;height: 190px;" src="' + imageURI + '" />')
                     }
                 }
                 if (imageURI == ""){
