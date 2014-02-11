@@ -27,17 +27,23 @@
                 imageURI = ""
                 //Photos aus dem lokalen Speicher holen
                 imageURIs = Array()
+
                 for (var i = 0; i < localStorage.length; i++){
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
                         imageURIs.push(localStorage.getItem(localStorage.key(i)));
                     }
                 }
+
+                //test
+                //imageURIs.push("js/SeeYou_47.5279938_7.6497052_1391536556673.jpg");
+                //imageURIs.push("js/SeeYou_47.5337651_7.6383803_1391177094424.jpg");
+
                 for (var i = 0; i < imageURIs.length; i++){
                     imageURI = imageURIs[i]
 
                     if( imageURIs.length - i > 1){
                         imageURI_2 = imageURIs[i + 1]
-                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI + '" style="margin-bottom: 5%">Löschen</button></th><th><img style="width: 90%;  height: auto;" src="' + imageURI_2 + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI + '" style="margin-bottom: 5%">Löschen</button></th></tr>')
+                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI + '" style="margin-bottom: 5%">Löschen</button></th><th><img style="width: 90%;  height: auto;" src="' + imageURI_2 + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI_2 + '" style="margin-bottom: 5%">Löschen</button></th></tr>')
                         i = i + 1
                     }
                     else{
@@ -51,6 +57,7 @@
             }
 
             function deletePhoto(image_Uri){
+                alert(image_Uri)
                 for (var i = 0; i < localStorage.length; i++){
                     if (localStorage.key(i) == image_Uri){
                         localStorage.removeItem(localStorage.key(i))
