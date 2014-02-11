@@ -22,7 +22,7 @@
     <file path="D:/Code/django-see-you/templates/si_hitec/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640037471" ignored="false" />
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
-    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392131598473" ignored="false" />
+    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392132104455" ignored="false" />
     <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,14 +74,14 @@
       <file leaf-file-name="photogallery.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.3149946">
+            <state line="62" column="34" selection-start="3193" selection-end="3193" vertical-scroll-proportion="0.75512403">
               <folding>
-                <marker date="1392131657634" expanded="true" signature="2058:2084" placeholder="..." />
-                <marker date="1392131657634" expanded="true" signature="2179:2196" placeholder="..." />
-                <marker date="1392131657634" expanded="true" signature="2235:2261" placeholder="..." />
-                <marker date="1392131657634" expanded="true" signature="2360:2377" placeholder="..." />
-                <marker date="1392131657634" expanded="true" signature="2596:2622" placeholder="..." />
-                <marker date="1392131657634" expanded="true" signature="2717:2734" placeholder="..." />
+                <marker date="1392132111662" expanded="true" signature="2058:2084" placeholder="..." />
+                <marker date="1392132111662" expanded="true" signature="2179:2196" placeholder="..." />
+                <marker date="1392132111662" expanded="true" signature="2235:2261" placeholder="..." />
+                <marker date="1392132111662" expanded="true" signature="2360:2377" placeholder="..." />
+                <marker date="1392132111662" expanded="true" signature="2596:2622" placeholder="..." />
+                <marker date="1392132111662" expanded="true" signature="2717:2734" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -430,14 +430,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photogallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.3149946">
+        <state line="62" column="34" selection-start="3193" selection-end="3193" vertical-scroll-proportion="0.75512403">
           <folding>
-            <marker date="1392131657634" expanded="true" signature="2058:2084" placeholder="..." />
-            <marker date="1392131657634" expanded="true" signature="2179:2196" placeholder="..." />
-            <marker date="1392131657634" expanded="true" signature="2235:2261" placeholder="..." />
-            <marker date="1392131657634" expanded="true" signature="2360:2377" placeholder="..." />
-            <marker date="1392131657634" expanded="true" signature="2596:2622" placeholder="..." />
-            <marker date="1392131657634" expanded="true" signature="2717:2734" placeholder="..." />
+            <marker date="1392132111662" expanded="true" signature="2058:2084" placeholder="..." />
+            <marker date="1392132111662" expanded="true" signature="2179:2196" placeholder="..." />
+            <marker date="1392132111662" expanded="true" signature="2235:2261" placeholder="..." />
+            <marker date="1392132111662" expanded="true" signature="2360:2377" placeholder="..." />
+            <marker date="1392132111662" expanded="true" signature="2596:2622" placeholder="..." />
+            <marker date="1392132111662" expanded="true" signature="2717:2734" placeholder="..." />
           </folding>
         </state>
       </provider>
