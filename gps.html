@@ -20,28 +20,29 @@
                 if (project!=null){
                     document.getElementById("title").innerHTML = "See You : " + project
                 }
+            }
 
-                imageURI = ""
-                //Photos aus dem lokalen Speicher holen
-                a = 0
-                for (var i = 0; i < localStorage.length; i++){
-                    if (localStorage.key(i).split("_",1) == "SeeYou"){
-                        imageURI = localStorage.getItem(localStorage.key(i));
-                        alert(imageURI)
-                        if( zahl%2 == 0 ){
-                            // zahl gerade
-                            $(".photos").append('<th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th></tr>')
-                        }
-                        else{
-                            // zahl ungerade
-                            $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th>')
-                        }
+            function startTrack(){
+                db = window.openDatabase("GPS","1.0", "GPS Database", 200000);
+                db.transaction(function(tx) {
+                    tx.executeSql('CREATE TABLE IF NOT EXISTS gpsTracks (id INTEGER PRIMARY KEY AUTOINCREMENT, trackname TEXT, x REAL, y REAL, Time TEXT)');
+                }, databaseError);
+            }
 
-                    }
-                }
-                if (imageURI == ""){
-                    alert("no Picture")
-                }
+            // Database error handler
+            function databaseError(error) {
+                alert("SQL Error: " + error.code);
+            }
+
+            function pauseTrack(){
+
+            }
+
+            function stopTrack(){
+
+            }
+
+            function uploadTracks(){
 
             }
         </script>
@@ -54,10 +55,16 @@
             </div><!-- /header -->
 
             <div data-role="content">
-                <h2>Photos</h2>
-                <table class="photos" border="0" cellspacing = "0">
-                </table>
-
+                <h2>GPS</h2>
+                <button onclick="startTrack()">Start Track</button>
+               <br />
+               <button onclick="pauseTrack()">Track unterbrechen</button>
+               <br />
+               <button onclick="stopTrack()">Stop Track</button>
+               <br />
+               <button onclick="uploadTracks()">Upload Track</button>
+               <br />
+                <div id="message"></div>
                 <br />
             </div><!-- /content -->
             <div id="footer" data-role="footer">

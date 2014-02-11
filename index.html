@@ -10,9 +10,6 @@
         <script src="js/main.js"></script>
         <script src="cordova.js"></script>
         <script type="text/javascript">
-            //Parameter
-            lat = 0;
-            lon = 0;
 
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -33,173 +30,33 @@
 
             }
 
-
-            //Get Photo
-            function getPhoto(source){
-                alert("GetPhoto")
-                navigator.camera.getPicture(onPhotoURISuccess,onError,{
-                    quality:50,
-                    destinationType: destinationType.FILE_URL,
-                    sourceType: source,
-                    saveToPhotoAlbum: true
-                });
+            function photo(){
+                parent.location='photos.html'
+            }
+            function gps(){
+                parent.location='gps.html'
             }
 
-            function displayPhotos(){
-                parent.location='photogallery.html'
-                /*
-                var uriImage = document.getElementById('dataImage');
-
-                uriImage.style.display = 'block';
-                imageURI = ""
-                //Photos aus dem lokalen Speicher holen
-
-                for (var i = 0; i < localStorage.length; i++){
-                    if (localStorage.key(i).split("_",1) == "SeeYou"){
-                        imageURI = localStorage.getItem(localStorage.key(i));
-                    }
+            function getGeschlecht(){
+                geschlecht=prompt("Geschlecht: m für männlich, w für weiblich","");
+                if (geschlecht != "m" && geschlecht!= "w"){
+                    getGeschlecht()
                 }
-                if (imageURI == ""){
-                    alert("no Picture")
-                }
-                else{
-                    uriImage.src= imageURI;
-                }
-                */
-            }
-
-            //If we get an image
-            function onPhotoURISuccess(imageURI){
-                alert("onPhotoSucces")
-
-                //Pfad in den lokalen Speicher kopieren
-                get_geolocation(imageURI)
+                return geschlecht
 
             }
 
-            function save_photo(imageURI, lat, lon){
-                var newDate = new Date();
-                var photoId = newDate.getTime();
-                photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
-                try {
-                    localStorage.setItem(photoId, imageURI);
-                    alert(photoId)
-                    alert(imageURI)
-                    alert("Photo gespeichert")
-                } catch (e) {
-                    if (e == QUOTA_EXCEEDED_ERR) {
-                        alert('Quota exceeded!');
-                    }
-                }
-                // Kommentar entfernen um direkt beim Photoschiessen das Bild hochzuladen
-/*                var project = localStorage.getItem("project");
-                if (project != null){
-                    photo_upload(photoId, imageURI, project);
-                }
-                else{
-                    alert("Bitte melden sie sich zuerst an ein Projekt an")
-                }*/
-            }
+            function getPerson(){
+                var vorname=prompt("Vorname","");
+                var nachname=prompt("Nachname","");
+                var alter=prompt("Alter","");
+                var geschlecht=getGeschlecht();
+                localStorage.setItem("vorname", vorname);
+                localStorage.setItem("nachname", nachname);
+                localStorage.setItem("alter", alter);
+                localStorage.setItem("geschlecht", geschlecht);
+                document.getElementById("name").innerHTML = vorname + " " + nachname
 
-            //Handle Errors
-            function onError(error){
-                alert("Error: " + error);
-            }
-
-            // Direkter Upload beim Photoschiessen
-            function photo_upload(photoId, imageURI, project) {
-                var options = new FileUploadOptions();
-                options.fileKey="file";
-                options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
-                options.mimeType="image/jpeg";
-
-                var params = new Object();
-                params.value1 = photoId;
-                params.value2 = project;
-
-                options.params = params;
-                options.chunkedMode = false;
-                var ft = new FileTransfer();
-
-                ft.upload(imageURI,
-                    "http://see--you.ch/photos/upload.php",
-                    function(result) {
-                        console.log('Upload success: ' + result.responseCode);
-                        console.log(result.bytesSent + ' bytes sent');
-                        alert("Photo auf Server geladen")
-                    },
-                    function(error) {
-                        alert("Fail")
-
-                    },
-                    options);
-            }
-
-            //Upload To Server
-            function uploadPhotos() {
-                var project = localStorage.getItem("project");
-                if (project != null){
-                    for (var i = 0; i < localStorage.length; i++){
-                        if (localStorage.key(i).split("_",1) == "SeeYou"){
-                            imageURI = localStorage.getItem(localStorage.key(i));
-                            photo_upload(localStorage.key(i), imageURI, project);
-
-                        }
-                    }
-                }
-                else{
-                    alert("Bitte melden sie sich zuerst an ein Projekt an")
-                }
-            }
-
-            function deletePhotos(){
-                for (var i = 0; i < localStorage.length; i++){
-                    if (localStorage.key(i).split("_",1) == "SeeYou"){
-                        localStorage.removeItem(localStorage.key(i))
-                    }
-                }
-            }
-
-            //Get Location
-            function get_geolocation(imageURI){
-                alert("Get Geoloc")
-                lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
-
-                // Get lat, lon, time
-                function geoloc_onSuccess(position) {
-                    alert("geoonsucc")
-                    lat = position.coords.latitude
-                    lon = position.coords.longitude
-                    console.log(lat);
-                    console.log(lon);
-                    alert(lat)
-                    save_photo(imageURI, lat, lon)
-                }
-
-                // If an error occurs
-                function geoloc_onError(error) {
-                    var errString = '';
-                    if (error.code) {
-                        switch (error.code) {
-                            case 1:
-                                errString =
-                                        'We do not have permission';
-                                break;
-                            case 2:
-                                errString =
-                                        'The location can not be determined';
-                                break;
-                            case 3:
-                                errString =
-                                        'There was a timeout';
-                                break;
-                            default:
-                                errString =
-                                        'Unknown error';
-                                break
-                        }
-                    }
-                }
             }
 
             function get_project(){
@@ -229,40 +86,29 @@
                 }
                 $("#project").val("gfhf").button("refresh");
             }
-
-        // Todo
-        // Anmeldung beim Server mit Projektkuerzel und Passwort
-        // Photogallerie ????
-        // Styling
-
         </script>
-    </head>
-    <body>
-        <div data-role="page">
+
+</head>
+<body>
+    <div data-role="page">
             <div data-role="header">
                 <h1 id="title">See You</h1>
             </div><!-- /header -->
 
             <div data-role="content">
-                <button onclick="getPhoto()">Get Photo</button>
-               <br />
-                <button onclick="displayPhotos()">Photogallery</button>
-               <br />
-                <img style="display: none;width: 200px;height: 190px;" id="dataImage" src="" />
+                <button onclick="photo()">Photo</button>
                 <br />
-                <button onclick="uploadPhotos()">Upload Photos</button>
-               <br />
-                <button onclick="deletePhotos()">Delete Photos</button>
-               <br />
+                <button onclick="gps()">GPS</button>
+                <br />
                 <button id="project" onclick="get_project();" >An Projekt anmelden</button>
                 <br />
-
-                <div id="message"></div>
+                <button id="person" onclick="getPerson()">Personendaten</button>
                 <br />
+
             </div><!-- /content -->
             <div id="footer" data-role="footer">
-                <h4><span>Copyright &copy; 2014</span></h4>
+                <h4><span id="name"></span></h4>
             </div><!-- /footer -->
         </div><!-- /page -->
-    </body>
+</body>
 </html>

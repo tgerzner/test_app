@@ -5,24 +5,26 @@
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
-    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391706142549" ignored="false" />
+    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391724628845" ignored="false" />
     <file path="/main.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391072699288" ignored="false" />
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391162243720" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
-    <file path="/test.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391615753114" ignored="false" />
+    <file path="/test.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392122342159" ignored="false" />
     <file path="D:/Code/django-see-you/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391617007730" ignored="false" />
     <file path="/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391616933968" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391628924541" ignored="false" />
     <file path="/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391628920778" ignored="false" />
-    <file path="D:/Code/django-see-you/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640217084" ignored="false" />
-    <file path="/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640164913" ignored="false" />
+    <file path="D:/Code/django-see-you/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783277132" ignored="false" />
+    <file path="/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783270700" ignored="false" />
     <file path="D:/Code/django-see-you/urls.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391639827968" ignored="false" />
     <file path="/urls.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391635687254" ignored="false" />
     <file path="D:/Code/django-see-you/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391638555173" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640037471" ignored="false" />
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
-    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391707738996" ignored="false" />
+    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392122384601" ignored="false" />
+    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
+    <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +44,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="13" selection-start="1995" selection-end="1995" vertical-scroll-proportion="76.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="0" selection-start="2001" selection-end="2638" vertical-scroll-proportion="-4.1764708">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="56" column="63" selection-start="2370" selection-end="2370" vertical-scroll-proportion="-0.65384614">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gps.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gps.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-7.1923075">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,82 +74,29 @@
       <file leaf-file-name="photogallery.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="36" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.30977443">
+            <state line="48" column="7" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.6124352">
               <folding>
-                <marker date="1391707825583" expanded="true" signature="1391:1433" placeholder="..." />
+                <marker date="1392122439707" expanded="true" signature="1506:1532" placeholder="..." />
+                <marker date="1392122439707" expanded="true" signature="1574:1591" placeholder="..." />
+                <marker date="1392122439707" expanded="true" signature="1792:1818" placeholder="..." />
+                <marker date="1392122439707" expanded="true" signature="1860:1877" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/error.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/test.html">
+        <entry file="file://D:/Code/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-22.26923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style2.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/style2.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="545" column="0" selection-start="11630" selection-end="11630" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="19" selection-start="751" selection-end="1034" vertical-scroll-proportion="6.6923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S2 - Capture Image/Program Files/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="889" selection-end="1487" vertical-scroll-proportion="-18.153847">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S1 - Camera/Program Files/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="21" column="40" selection-start="620" selection-end="644" vertical-scroll-proportion="-13.730769">
+              <folding>
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#th#0;n#tr#1;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,7 +122,10 @@
         <option value="$USER_HOME$/Desktop/style.css" />
         <option value="$USER_HOME$/Desktop/style2.css" />
         <option value="$USER_HOME$/Desktop/test.html" />
+        <option value="$PROJECT_DIR$/gps.html" />
+        <option value="$PROJECT_DIR$/photos.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="D:/Code/test.html" />
         <option value="$PROJECT_DIR$/photogallery.html" />
       </list>
     </option>
@@ -166,7 +134,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -267,7 +235,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -284,14 +252,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12998714" sideWeight="0.67085075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13127413" sideWeight="0.67085075" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -367,121 +335,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S2 - Capture Image/Program Files/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="509" selection-end="1473" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/log.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="1294" selection-end="1294" vertical-scroll-proportion="0.25731584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="751" selection-end="1034" vertical-scroll-proportion="6.6923075">
-          <folding />
-        </state>
+        <state line="24" column="19" selection-start="751" selection-end="1034" vertical-scroll-proportion="6.6923075" />
       </provider>
     </entry>
     <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S2 - Capture Image/Program Files/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="889" selection-end="1487" vertical-scroll-proportion="-18.153847">
-          <folding />
-        </state>
+        <state line="31" column="0" selection-start="889" selection-end="1487" vertical-scroll-proportion="-18.153847" />
       </provider>
     </entry>
     <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S1 - Camera/Program Files/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.8846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/error.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.8846154" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/upload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/style2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="545" column="0" selection-start="11630" selection-end="11630" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="545" column="0" selection-start="11630" selection-end="11630" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-22.26923">
-          <folding />
-        </state>
+        <state line="72" column="0" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-22.26923" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1331" column="0" selection-start="23369" selection-end="23369" vertical-scroll-proportion="0.33285093">
+        <state line="1331" column="0" selection-start="23369" selection-end="23369" vertical-scroll-proportion="0.33285093" />
+      </provider>
+    </entry>
+    <entry file="file://D:/error.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="1.1917404">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="2001" selection-end="2638" vertical-scroll-proportion="-4.1764708">
+        <state line="56" column="63" selection-start="2370" selection-end="2370" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S5 - Web SQL Database/Program Files/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="21" selection-start="1612" selection-end="1612" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Code/image_SeeYou_47.533749_7.638387_1391170528786.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="13" selection-start="1995" selection-end="1995" vertical-scroll-proportion="76.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Code/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="620" selection-end="644" vertical-scroll-proportion="-13.730769">
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#th#0;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#th#0;n#tr#1;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photogallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="36" selection-start="1539" selection-end="1539" vertical-scroll-proportion="0.30977443">
+        <state line="48" column="7" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.6124352">
           <folding>
-            <marker date="1391707825583" expanded="true" signature="1391:1433" placeholder="..." />
+            <marker date="1392122439707" expanded="true" signature="1506:1532" placeholder="..." />
+            <marker date="1392122439707" expanded="true" signature="1574:1591" placeholder="..." />
+            <marker date="1392122439707" expanded="true" signature="1792:1818" placeholder="..." />
+            <marker date="1392122439707" expanded="true" signature="1860:1877" placeholder="..." />
           </folding>
         </state>
       </provider>
