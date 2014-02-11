@@ -21,15 +21,11 @@
             function onDeviceReady() {
                 var project = localStorage.getItem("project");
                 if (project!=null){
-                    $('button#project').innerHTML = "Von Projekt abmelden";
-                    document.getElementById("project").innerHTML = "Abmelden"
-                    $("#project").val("Abmelden").button("refresh");
                     document.getElementById("title").innerHTML = "See You : " + project
                 }
-                else{
-                    document.getElementById("project").innerHTML = "An Projekt anmelden";
-                    $("#project").val("An Projekt anmelden").button("refresh");
-                }
+                var vorname = localStorage.getItem("vorname")
+                var nachname = localStorage.getItem("nachname")
+                document.getElementById("name").innerHTML = vorname + " " + nachname
 
             }
 
@@ -209,7 +205,7 @@
                <br />
             </div><!-- /content -->
             <div id="footer" data-role="footer">
-                <h4><span>Copyright &copy; 2014</span></h4>
+                <h4><span id="name"></span></h4>
             </div><!-- /footer -->
         </div><!-- /page -->
     </body>

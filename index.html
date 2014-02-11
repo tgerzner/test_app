@@ -28,6 +28,10 @@
                     $("#project").val("An Projekt anmelden").button("refresh");
                 }
 
+                var vorname = localStorage.getItem("vorname")
+                var nachname = localStorage.getItem("nachname")
+                document.getElementById("name").innerHTML = vorname + " " + nachname
+
             }
 
             function photo(){

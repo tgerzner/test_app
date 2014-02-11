@@ -5,11 +5,11 @@
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
-    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391724628845" ignored="false" />
+    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392126808464" ignored="false" />
     <file path="/main.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391072699288" ignored="false" />
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391162243720" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
-    <file path="/test.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392122342159" ignored="false" />
+    <file path="/test.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392126245559" ignored="false" />
     <file path="D:/Code/django-see-you/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391617007730" ignored="false" />
     <file path="/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391616933968" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391628924541" ignored="false" />
@@ -22,7 +22,7 @@
     <file path="D:/Code/django-see-you/templates/si_hitec/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640037471" ignored="false" />
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
-    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392122384601" ignored="false" />
+    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392127615495" ignored="false" />
     <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,10 +44,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="photos.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="13" selection-start="1995" selection-end="1995" vertical-scroll-proportion="76.0">
+            <state line="25" column="16" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.44041452">
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="63" selection-start="2370" selection-end="2370" vertical-scroll-proportion="-0.65384614">
+            <state line="30" column="0" selection-start="1428" selection-end="1638" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -71,15 +71,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photogallery.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="photogallery.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="7" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.6124352">
+            <state line="69" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="-15.176471">
               <folding>
-                <marker date="1392122439707" expanded="true" signature="1506:1532" placeholder="..." />
-                <marker date="1392122439707" expanded="true" signature="1574:1591" placeholder="..." />
-                <marker date="1392122439707" expanded="true" signature="1792:1818" placeholder="..." />
-                <marker date="1392122439707" expanded="true" signature="1860:1877" placeholder="..." />
+                <marker date="1392127747238" expanded="true" signature="1860:1886" placeholder="..." />
+                <marker date="1392127747238" expanded="true" signature="1928:1945" placeholder="..." />
+                <marker date="1392127747238" expanded="true" signature="1984:2010" placeholder="..." />
+                <marker date="1392127747238" expanded="true" signature="2054:2071" placeholder="..." />
+                <marker date="1392127747238" expanded="true" signature="2290:2316" placeholder="..." />
+                <marker date="1392127747238" expanded="true" signature="2358:2375" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -111,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/main.js" />
         <option value="$USER_HOME$/Desktop/log.txt" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/js/main.js" />
@@ -123,10 +124,11 @@
         <option value="$USER_HOME$/Desktop/style2.css" />
         <option value="$USER_HOME$/Desktop/test.html" />
         <option value="$PROJECT_DIR$/gps.html" />
-        <option value="$PROJECT_DIR$/photos.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="D:/Code/test.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/photogallery.html" />
+        <option value="$PROJECT_DIR$/photos.html" />
       </list>
     </option>
   </component>
@@ -335,11 +337,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="751" selection-end="1034" vertical-scroll-proportion="6.6923075" />
-      </provider>
-    </entry>
     <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 4 - Camera, Capture &amp; Contacts/S2 - Capture Image/Program Files/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="0" selection-start="889" selection-end="1487" vertical-scroll-proportion="-18.153847" />
@@ -372,19 +369,14 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1331" column="0" selection-start="23369" selection-end="23369" vertical-scroll-proportion="0.33285093" />
+        <state line="1331" column="0" selection-start="23369" selection-end="23369" vertical-scroll-proportion="0.33285093">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://D:/error.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="1.1917404">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="63" selection-start="2370" selection-end="2370" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
@@ -401,20 +393,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1995" selection-end="1995" vertical-scroll-proportion="76.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Code/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="40" selection-start="620" selection-end="644" vertical-scroll-proportion="-13.730769">
@@ -429,15 +407,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photogallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="7" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.6124352">
+        <state line="69" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="-15.176471">
           <folding>
-            <marker date="1392122439707" expanded="true" signature="1506:1532" placeholder="..." />
-            <marker date="1392122439707" expanded="true" signature="1574:1591" placeholder="..." />
-            <marker date="1392122439707" expanded="true" signature="1792:1818" placeholder="..." />
-            <marker date="1392122439707" expanded="true" signature="1860:1877" placeholder="..." />
+            <marker date="1392127747238" expanded="true" signature="1860:1886" placeholder="..." />
+            <marker date="1392127747238" expanded="true" signature="1928:1945" placeholder="..." />
+            <marker date="1392127747238" expanded="true" signature="1984:2010" placeholder="..." />
+            <marker date="1392127747238" expanded="true" signature="2054:2071" placeholder="..." />
+            <marker date="1392127747238" expanded="true" signature="2290:2316" placeholder="..." />
+            <marker date="1392127747238" expanded="true" signature="2358:2375" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1428" selection-end="1638" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="16" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.44041452">
+          <folding />
         </state>
       </provider>
     </entry>

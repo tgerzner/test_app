@@ -20,29 +20,34 @@
                 if (project!=null){
                     document.getElementById("title").innerHTML = "See You : " + project
                 }
+                var vorname = localStorage.getItem("vorname")
+                var nachname = localStorage.getItem("nachname")
+                document.getElementById("name").innerHTML = vorname + " " + nachname
 
                 imageURI = ""
                 //Photos aus dem lokalen Speicher holen
-                a = 0
+                imageURIs = Array()
                 for (var i = 0; i < localStorage.length; i++){
                     if (localStorage.key(i).split("_",1) == "SeeYou"){
-                        imageURI = localStorage.getItem(localStorage.key(i));
-                        alert(imageURI)
-                        if( zahl%2 == 0 ){
-                            // zahl gerade
-                            $(".photos").append('<th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th></tr>')
-                        }
-                        else{
-                            // zahl ungerade
-                            $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th>')
-                        }
+                        imageURIs.push(localStorage.getItem(localStorage.key(i)));
+                    }
+                }
+                for (var i = 0; i < imageURIs.length; i++){
+                    imageURI = imageURIs[i]
 
+                    if( imageURIs.length - i > 1){
+                        imageURI_2 = imageURIs[i + 1]
+                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th><th><img style="width: 90%;  height: auto;" src="' + imageURI_2 + '" /><button style="margin-bottom: 5%">Löschen</button></th></tr>')
+                        i = i + 1
+                    }
+                    else{
+                        // zahl ungerade
+                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th></tr>')
                     }
                 }
                 if (imageURI == ""){
-                    alert("no Picture")
+                    $(".photos").append('<h3>Keine Bilder vorhanden</h3>')
                 }
-
             }
         </script>
 
@@ -61,7 +66,7 @@
                 <br />
             </div><!-- /content -->
             <div id="footer" data-role="footer">
-                <h4><span>Copyright &copy; 2014</span></h4>
+                <h4><span id="name"></span></h4>
             </div><!-- /footer -->
         </div><!-- /page -->
 </body>
