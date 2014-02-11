@@ -22,7 +22,7 @@
     <file path="D:/Code/django-see-you/templates/si_hitec/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640037471" ignored="false" />
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
-    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392127615495" ignored="false" />
+    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392130665994" ignored="false" />
     <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,10 +44,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="photos.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="16" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.44041452">
+            <state line="131" column="0" selection-start="4906" selection-end="5199" vertical-scroll-proportion="-6.1372547">
               <folding />
             </state>
           </provider>
@@ -71,17 +71,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photogallery.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="photogallery.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="-15.176471">
+            <state line="55" column="68" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.5415318">
               <folding>
-                <marker date="1392127747238" expanded="true" signature="1860:1886" placeholder="..." />
-                <marker date="1392127747238" expanded="true" signature="1928:1945" placeholder="..." />
-                <marker date="1392127747238" expanded="true" signature="1984:2010" placeholder="..." />
-                <marker date="1392127747238" expanded="true" signature="2054:2071" placeholder="..." />
-                <marker date="1392127747238" expanded="true" signature="2290:2316" placeholder="..." />
-                <marker date="1392127747238" expanded="true" signature="2358:2375" placeholder="..." />
+                <marker date="1392130697887" expanded="true" signature="1860:1886" placeholder="..." />
+                <marker date="1392130697887" expanded="true" signature="1981:1998" placeholder="..." />
+                <marker date="1392130697887" expanded="true" signature="2037:2063" placeholder="..." />
+                <marker date="1392130697887" expanded="true" signature="2160:2177" placeholder="..." />
+                <marker date="1392130697887" expanded="true" signature="2396:2422" placeholder="..." />
+                <marker date="1392130697887" expanded="true" signature="2517:2534" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -127,8 +127,8 @@
         <option value="D:/Code/test.html" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/photogallery.html" />
         <option value="$PROJECT_DIR$/photos.html" />
+        <option value="$PROJECT_DIR$/photogallery.html" />
       </list>
     </option>
   </component>
@@ -414,20 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3089" selection-end="3089" vertical-scroll-proportion="-15.176471">
-          <folding>
-            <marker date="1392127747238" expanded="true" signature="1860:1886" placeholder="..." />
-            <marker date="1392127747238" expanded="true" signature="1928:1945" placeholder="..." />
-            <marker date="1392127747238" expanded="true" signature="1984:2010" placeholder="..." />
-            <marker date="1392127747238" expanded="true" signature="2054:2071" placeholder="..." />
-            <marker date="1392127747238" expanded="true" signature="2290:2316" placeholder="..." />
-            <marker date="1392127747238" expanded="true" signature="2358:2375" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="1428" selection-end="1638" vertical-scroll-proportion="-10.0">
@@ -437,8 +423,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/photos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="16" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.44041452">
+        <state line="131" column="0" selection-start="4906" selection-end="5199" vertical-scroll-proportion="-6.1372547">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photogallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="68" selection-start="2985" selection-end="2985" vertical-scroll-proportion="0.5415318">
+          <folding>
+            <marker date="1392130697887" expanded="true" signature="1860:1886" placeholder="..." />
+            <marker date="1392130697887" expanded="true" signature="1981:1998" placeholder="..." />
+            <marker date="1392130697887" expanded="true" signature="2037:2063" placeholder="..." />
+            <marker date="1392130697887" expanded="true" signature="2160:2177" placeholder="..." />
+            <marker date="1392130697887" expanded="true" signature="2396:2422" placeholder="..." />
+            <marker date="1392130697887" expanded="true" signature="2517:2534" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

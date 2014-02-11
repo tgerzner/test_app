@@ -37,16 +37,24 @@
 
                     if( imageURIs.length - i > 1){
                         imageURI_2 = imageURIs[i + 1]
-                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th><th><img style="width: 90%;  height: auto;" src="' + imageURI_2 + '" /><button style="margin-bottom: 5%">Löschen</button></th></tr>')
+                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI + '" style="margin-bottom: 5%">Löschen</button></th><th><img style="width: 90%;  height: auto;" src="' + imageURI_2 + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI + '" style="margin-bottom: 5%">Löschen</button></th></tr>')
                         i = i + 1
                     }
                     else{
                         // zahl ungerade
-                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button style="margin-bottom: 5%">Löschen</button></th></tr>')
+                        $(".photos").append('<tr><th><img style="width: 90%;  height: auto;" src="' + imageURI + '" /><button onclick="deletePhoto(this.id)" id="' + imageURI + '" style="margin-bottom: 5%">Löschen</button></th></tr>')
                     }
                 }
                 if (imageURI == ""){
                     $(".photos").append('<h3>Keine Bilder vorhanden</h3>')
+                }
+            }
+
+            function deletePhoto(image_Uri){
+                for (var i = 0; i < localStorage.length; i++){
+                    if (localStorage.key(i) == image_Uri){
+                        localStorage.removeItem(localStorage.key(i))
+                    }
                 }
             }
         </script>
