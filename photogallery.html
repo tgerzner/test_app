@@ -57,15 +57,12 @@
             }
 
             function deletePhoto(image_Uri){
-                alert(image_Uri)
                 for (var i = 0; i < localStorage.length; i++){
-                    alert(localStorage.getItem(localStorage.key(i)))
-                    alert(localStorage.key(i))
                     if (localStorage.getItem(localStorage.key(i)) == image_Uri){
-                        alert("del")
                         localStorage.removeItem(localStorage.key(i))
                     }
                 }
+                location.reload()
             }
         </script>
 

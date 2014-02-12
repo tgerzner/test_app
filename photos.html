@@ -85,31 +85,39 @@
 
             // Direkter Upload beim Photoschiessen
             function photo_upload(photoId, imageURI, project) {
-                var options = new FileUploadOptions();
-                options.fileKey="file";
-                options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
-                options.mimeType="image/jpeg";
+                var vorname = localStorage.getItem("vorname");
+                var nachname = localStorage.getItem("nachname");
+                if (vorname == null || nachname == null){
+                    alert("Geben sie bitte ihren Vornamen und Nachnamen an")
+                }
+                else{
+                    var options = new FileUploadOptions();
+                    options.fileKey="file";
+                    options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+                    options.mimeType="image/jpeg";
+                    photoId = photoId + "_" + vorname + "_" + nachname
 
-                var params = new Object();
-                params.value1 = photoId;
-                params.value2 = project;
+                    var params = new Object();
+                    params.value1 = photoId;
+                    params.value2 = project;
 
-                options.params = params;
-                options.chunkedMode = false;
-                var ft = new FileTransfer();
+                    options.params = params;
+                    options.chunkedMode = false;
+                    var ft = new FileTransfer();
 
-                ft.upload(imageURI,
-                    "http://see--you.ch/photos/upload.php",
-                    function(result) {
-                        console.log('Upload success: ' + result.responseCode);
-                        console.log(result.bytesSent + ' bytes sent');
-                        alert("Photo auf Server geladen")
-                    },
-                    function(error) {
-                        alert("Fail")
+                    ft.upload(imageURI,
+                        "http://see--you.ch/photos/upload.php",
+                        function(result) {
+                            console.log('Upload success: ' + result.responseCode);
+                            console.log(result.bytesSent + ' bytes sent');
+                            alert("Photo auf Server geladen")
+                        },
+                        function(error) {
+                            alert("Fail")
 
-                    },
-                    options);
+                        },
+                        options);
+                }
             }
 
             //Upload To Server
@@ -195,13 +203,13 @@
             </div><!-- /header -->
 
             <div data-role="content">
-                <button onclick="getPhoto()">Get Photo</button>
+                <button onclick="getPhoto()">Photo schiessen</button>
                 <br />
-                <button onclick="displayPhotos()">Photogallery</button>
+                <button onclick="displayPhotos()">Photo Gallery</button>
                <br />
-                <button onclick="uploadPhotos()">Upload Photos</button>
+                <button onclick="uploadPhotos()">Photos heraufladen</button>
                <br />
-                <button onclick="deletePhotos()">Delete Photos</button>
+                <button onclick="deletePhotos()">Alle Photos löschen</button>
                <br />
             </div><!-- /content -->
             <div id="footer" data-role="footer">

@@ -22,9 +22,10 @@
     <file path="D:/Code/django-see-you/templates/si_hitec/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640037471" ignored="false" />
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
-    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392132598319" ignored="false" />
+    <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
     <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
+    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392209845321" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +45,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="photos.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="0" selection-start="4906" selection-end="5199" vertical-scroll-proportion="-6.1372547">
+            <state line="97" column="70" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.24042553">
               <folding />
             </state>
           </provider>
@@ -56,7 +57,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1428" selection-end="1638" vertical-scroll-proportion="-10.0">
+            <state line="30" column="61" selection-start="1501" selection-end="1501" vertical-scroll-proportion="1.0">
               <folding />
             </state>
           </provider>
@@ -71,17 +72,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photogallery.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="photogallery.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="17" selection-start="2934" selection-end="2934" vertical-scroll-proportion="0.5717368">
+            <state line="66" column="17" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-12.176471">
               <folding>
-                <marker date="1392132605829" expanded="true" signature="2058:2084" placeholder="..." />
-                <marker date="1392132605829" expanded="true" signature="2179:2196" placeholder="..." />
-                <marker date="1392132605829" expanded="true" signature="2235:2261" placeholder="..." />
-                <marker date="1392132605829" expanded="true" signature="2360:2377" placeholder="..." />
-                <marker date="1392132605829" expanded="true" signature="2596:2622" placeholder="..." />
-                <marker date="1392132605829" expanded="true" signature="2717:2734" placeholder="..." />
+                <marker date="1392208851829" expanded="true" signature="2058:2084" placeholder="..." />
+                <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
+                <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
+                <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
+                <marker date="1392208851829" expanded="true" signature="2596:2622" placeholder="..." />
+                <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -99,6 +100,15 @@
                 <element signature="n#style#0;n#img#0;n#th#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#th#0;n#tr#1;n#table#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/upload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,8 +137,8 @@
         <option value="D:/Code/test.html" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/photos.html" />
         <option value="$PROJECT_DIR$/photogallery.html" />
+        <option value="$PROJECT_DIR$/photos.html" />
       </list>
     </option>
   </component>
@@ -347,11 +357,6 @@
         <state line="9" column="29" selection-start="391" selection-end="391" vertical-scroll-proportion="-5.8846154" />
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/style2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="545" column="0" selection-start="11630" selection-end="11630" vertical-scroll-proportion="0.0" />
@@ -393,27 +398,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1428" selection-end="1638" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="0" selection-start="4906" selection-end="5199" vertical-scroll-proportion="-6.1372547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Code/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="-8.5">
@@ -428,17 +412,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photogallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="17" selection-start="2934" selection-end="2934" vertical-scroll-proportion="0.5717368">
+        <state line="66" column="17" selection-start="3313" selection-end="3313" vertical-scroll-proportion="-12.176471">
           <folding>
-            <marker date="1392132605829" expanded="true" signature="2058:2084" placeholder="..." />
-            <marker date="1392132605829" expanded="true" signature="2179:2196" placeholder="..." />
-            <marker date="1392132605829" expanded="true" signature="2235:2261" placeholder="..." />
-            <marker date="1392132605829" expanded="true" signature="2360:2377" placeholder="..." />
-            <marker date="1392132605829" expanded="true" signature="2596:2622" placeholder="..." />
-            <marker date="1392132605829" expanded="true" signature="2717:2734" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2058:2084" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2596:2622" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="61" selection-start="1501" selection-end="1501" vertical-scroll-proportion="1.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="70" selection-start="3851" selection-end="3851" vertical-scroll-proportion="0.24042553">
+          <folding />
         </state>
       </provider>
     </entry>
