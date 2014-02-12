@@ -55,8 +55,13 @@
             }
 
             function save_photo(imageURI, lat, lon){
-                var newDate = new Date();
-                var photoId = newDate.getTime();
+                var date = new Date();
+                y = date.getFullYear()
+                m = date.getMonth()+1
+                d = date.getDate()
+                h = date.getHours()
+                min = date.getMinutes()
+                photoId = y + "-" + m + "-" + d + "-" + h + "-" + min
                 photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
                 try {
                     localStorage.setItem(photoId, imageURI);
