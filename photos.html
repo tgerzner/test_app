@@ -32,7 +32,6 @@
 
             //Get Photo
             function getPhoto(source){
-                alert("GetPhoto")
                 navigator.camera.getPicture(onPhotoURISuccess,onError,{
                     quality:50,
                     destinationType: destinationType.FILE_URL,
@@ -47,7 +46,6 @@
 
             //If we get an image
             function onPhotoURISuccess(imageURI){
-                alert("onPhotoSucces")
 
                 //Pfad in den lokalen Speicher kopieren
                 get_geolocation(imageURI)
@@ -65,9 +63,6 @@
                 photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
                 try {
                     localStorage.setItem(photoId, imageURI);
-                    alert(photoId)
-                    alert(imageURI)
-                    alert("Photo gespeichert")
                 } catch (e) {
                     if (e == QUOTA_EXCEEDED_ERR) {
                         alert('Quota exceeded!');
@@ -152,17 +147,14 @@
 
             //Get Location
             function get_geolocation(imageURI){
-                alert("Get Geoloc")
                 lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
 
                 // Get lat, lon, time
                 function geoloc_onSuccess(position) {
-                    alert("geoonsucc")
                     lat = position.coords.latitude
                     lon = position.coords.longitude
                     console.log(lat);
                     console.log(lon);
-                    alert(lat)
                     save_photo(imageURI, lat, lon)
                 }
 
