@@ -13,6 +13,7 @@
             //Parameter
             lat = 0;
             lon = 0;
+            debug = true;
 
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -32,6 +33,9 @@
 
             //Get Photo
             function getPhoto(source){
+                if (debug == true){
+                    alert("get photo")
+                }
                 navigator.camera.getPicture(onPhotoURISuccess,onError,{
                     quality:50,
                     destinationType: destinationType.FILE_URL,
@@ -48,13 +52,19 @@
 
             //If we get an image
             function onPhotoURISuccess(imageURI){
-
+                if (debug == true){
+                    alert("on photo success")
+                }
                 //Pfad in den lokalen Speicher kopieren
                 get_geolocation(imageURI)
 
             }
 
             function save_photo(imageURI, lat, lon){
+                if (debug == true){
+                    alert("save photo")
+                }
+
                 var date = new Date();
                 y = date.getFullYear()
                 m = date.getMonth()+1
@@ -63,6 +73,9 @@
                 min = date.getMinutes()
                 photoId = y + "-" + m + "-" + d + "-" + h + "-" + min
                 photoId = "SeeYou_" + lat + "_" + lon + "_" + photoId
+                if (debug == true){
+                    alert(photoId)
+                }
                 try {
                     localStorage.setItem(photoId, imageURI);
                 } catch (e) {
@@ -149,10 +162,16 @@
 
             //Get Location
             function get_geolocation(imageURI){
+                if (debug == true){
+                    alert("get geoloc")
+                }
                 lat, lon = navigator.geolocation.getCurrentPosition(geoloc_onSuccess, geoloc_onError);
 
                 // Get lat, lon, time
                 function geoloc_onSuccess(position) {
+                if (debug == true){
+                    alert("geoloc on success")
+                }
                     lat = position.coords.latitude
                     lon = position.coords.longitude
                     console.log(lat);
