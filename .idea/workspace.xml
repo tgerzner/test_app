@@ -25,7 +25,7 @@
     <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
     <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
-    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392211555537" ignored="false" />
+    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392292717962" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +45,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="photos.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="25" selection-start="3462" selection-end="3467" vertical-scroll-proportion="-10.803922">
+            <state line="38" column="45" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.68723404">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="33" selection-start="3632" selection-end="3637" vertical-scroll-proportion="0.87765956">
+            <state line="57" column="23" selection-start="2381" selection-end="2382" vertical-scroll-proportion="-8.843137">
               <folding />
             </state>
           </provider>
@@ -384,11 +384,6 @@
         <state line="37" column="21" selection-start="1612" selection-end="1612" vertical-scroll-proportion="-0.65384614" />
       </provider>
     </entry>
-    <entry file="file://D:/Code/image_SeeYou_47.533749_7.638387_1391170528786.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gps.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0">
@@ -429,16 +424,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="25" selection-start="3462" selection-end="3467" vertical-scroll-proportion="-10.803922">
+        <state line="57" column="23" selection-start="2381" selection-end="2382" vertical-scroll-proportion="-8.843137">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/photos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="33" selection-start="3632" selection-end="3637" vertical-scroll-proportion="0.87765956">
+        <state line="38" column="45" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.68723404">
           <folding />
         </state>
       </provider>
