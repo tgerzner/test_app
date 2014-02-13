@@ -10,14 +10,14 @@
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391162243720" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
     <file path="/test.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392211505799" ignored="false" />
-    <file path="D:/Code/django-see-you/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391617007730" ignored="false" />
-    <file path="/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391616933968" ignored="false" />
-    <file path="D:/Code/django-see-you/templates/si_hitec/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391628924541" ignored="false" />
-    <file path="/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391628920778" ignored="false" />
-    <file path="D:/Code/django-see-you/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783277132" ignored="false" />
-    <file path="/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783270700" ignored="false" />
-    <file path="D:/Code/django-see-you/urls.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391639827968" ignored="false" />
-    <file path="/urls.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391635687254" ignored="false" />
+    <file path="D:/Code/django-see-you/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392302801855" ignored="false" />
+    <file path="/models.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392302801367" ignored="false" />
+    <file path="D:/Code/django-see-you/templates/si_hitec/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392326039913" ignored="false" />
+    <file path="/map.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392323784802" ignored="false" />
+    <file path="D:/Code/django-see-you/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392320932035" ignored="false" />
+    <file path="/views.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392320932035" ignored="false" />
+    <file path="D:/Code/django-see-you/urls.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392300152260" ignored="false" />
+    <file path="/urls.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392300152260" ignored="false" />
     <file path="D:/Code/django-see-you/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391638555173" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640037471" ignored="false" />
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
@@ -25,7 +25,10 @@
     <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
     <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
-    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392294129961" ignored="false" />
+    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392325923768" ignored="false" />
+    <file path="/a.dummy" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303127725" ignored="false" />
+    <file path="/admin.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303196881" ignored="false" />
+    <file path="D:/Code/django-see-you/admin.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303196881" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +51,7 @@
       <file leaf-file-name="photos.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="31" selection-start="2361" selection-end="2361" vertical-scroll-proportion="0.36914894">
+            <state line="132" column="59" selection-start="5393" selection-end="5393" vertical-scroll-proportion="0.5328125">
               <folding />
             </state>
           </provider>
@@ -57,7 +60,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="23" selection-start="2381" selection-end="2382" vertical-scroll-proportion="-8.843137">
+            <state line="70" column="20" selection-start="3011" selection-end="3712" vertical-scroll-proportion="-6.1764708">
               <folding />
             </state>
           </provider>
@@ -75,13 +78,13 @@
       <file leaf-file-name="photogallery.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="17" selection-start="3313" selection-end="3313" vertical-scroll-proportion="0.0">
+            <state line="45" column="242" selection-start="2235" selection-end="2235" vertical-scroll-proportion="-13.307693">
               <folding>
-                <marker date="1392208851829" expanded="true" signature="2058:2084" placeholder="..." />
+                <marker date="1392208851829" expanded="false" signature="2058:2084" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
-                <marker date="1392208851829" expanded="true" signature="2596:2622" placeholder="..." />
+                <marker date="1392208851829" expanded="false" signature="2596:2622" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
               </folding>
             </state>
@@ -139,7 +142,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
-    <option name="height" value="1176" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -257,7 +260,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -391,20 +394,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photogallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="17" selection-start="3313" selection-end="3313" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1392208851829" expanded="true" signature="2058:2084" placeholder="..." />
-            <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
-            <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
-            <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
-            <marker date="1392208851829" expanded="true" signature="2596:2622" placeholder="..." />
-            <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="23" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0">
@@ -424,16 +413,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/photogallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="242" selection-start="2235" selection-end="2235" vertical-scroll-proportion="-13.307693">
+          <folding>
+            <marker date="1392208851829" expanded="false" signature="2058:2084" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
+            <marker date="1392208851829" expanded="false" signature="2596:2622" placeholder="..." />
+            <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="23" selection-start="2381" selection-end="2382" vertical-scroll-proportion="-8.843137">
+        <state line="70" column="20" selection-start="3011" selection-end="3712" vertical-scroll-proportion="-6.1764708">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="31" selection-start="2361" selection-end="2361" vertical-scroll-proportion="0.36914894">
+        <state line="132" column="59" selection-start="5393" selection-end="5393" vertical-scroll-proportion="0.5328125">
           <folding />
         </state>
       </provider>

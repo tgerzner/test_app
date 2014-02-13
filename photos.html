@@ -125,7 +125,17 @@
                         function(result) {
                             console.log('Upload success: ' + result.responseCode);
                             console.log(result.bytesSent + ' bytes sent');
-                            alert("Photo auf Server geladen")
+                            alert("Photo auf Server geladen");
+                            proj = localStorage.getItem("project")
+                            var seeYouUrl = "http://app.see--you.ch/photopoi/?project=" + proj + "&filename=" + photoId;
+                            $.ajax({url: seeYouUrl, success:function(result){
+                                if (result == "<h1>True</h1>"){
+                                    alert("Photopo erstellt")
+                                }
+                                else {
+                                    alert("Es lief was schief")
+                                };
+                            }})
                         },
                         function(error) {
                             alert("Fail")
