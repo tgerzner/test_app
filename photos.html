@@ -13,7 +13,7 @@
             //Parameter
             lat = 0;
             lon = 0;
-            debug = true;
+            debug = false;
 
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -129,11 +129,15 @@
                             proj = localStorage.getItem("project")
                             var seeYouUrl = "http://app.see--you.ch/photopoi/?project=" + proj + "&filename=" + photoId;
                             $.ajax({url: seeYouUrl, success:function(result){
-                                if (result == "<h1>True</h1>"){
-                                    alert("Photopo erstellt")
+                                if (result == "<h1>Photopoi gespeichert</h1>"){
+                                    if (debug == true){
+                                        alert("Photopoi erstellt")
+                                    }
                                 }
                                 else {
-                                    alert("Es lief was schief")
+                                    if (debug == true){
+                                        alert("Es lief was schief")
+                                    }
                                 };
                             }})
                         },

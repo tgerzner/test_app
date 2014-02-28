@@ -10,6 +10,7 @@
         <script src="js/main.js"></script>
         <script src="cordova.js"></script>
         <script type="text/javascript">
+            debug = true
 
             // Wait for PhoneGap to load
             document.addEventListener("deviceready", onDeviceReady, false);
@@ -20,30 +21,171 @@
                 if (project!=null){
                     document.getElementById("title").innerHTML = "See You : " + project
                 }
+                vorname = localStorage.getItem("vorname")
+                nachname = localStorage.getItem("nachname")
+                alter = localStorage.getItem("alter")
+                geschlecht = localStorage.getItem("geschlecht")
+                document.getElementById("name").innerHTML = vorname + " " + nachname
             }
 
             function startTrack(){
+                if (debug == true){
+                    alert("start track")
+                }
                 db = window.openDatabase("GPS","1.0", "GPS Database", 200000);
                 db.transaction(function(tx) {
-                    tx.executeSql('CREATE TABLE IF NOT EXISTS gpsTracks (id INTEGER PRIMARY KEY AUTOINCREMENT, trackname TEXT, x REAL, y REAL, Time TEXT)');
+                    // Löschen der Punkte
+                    tx.executeSql('DROP TABLE gpsTracks')
+                    tx.executeSql('CREATE TABLE IF NOT EXISTS gpsTracks (id INTEGER PRIMARY KEY AUTOINCREMENT, x REAL, y REAL, ele REAL, Time TEXT)');
                 }, databaseError);
+                geoLocInterval = setInterval(getGeoLoc,3000)
             }
 
             // Database error handler
             function databaseError(error) {
-                alert("SQL Error: " + error.code);
+                console.log("SQL Error: " + error.code + error.msg);
+            }
+
+            function getGeoLoc(){
+                if (debug == true){
+                    alert("get geo loc")
+                }
+                navigator.geolocation.getCurrentPosition(posSuccess,posError);
+            }
+
+            function posSuccess(position){
+                if (debug == true){
+                    alert("on pos success")
+                }
+                db.transaction(function(tx){
+                    console.log("sdfsd")
+                    lon = position.coords.longitude;
+                    lat = position.coords.latitude;
+                    ele = position.coords.altitude;
+                    var date = new Date(position.timestamp);
+                    y = date.getFullYear()
+                    m = date.getMonth()+1
+                    d = date.getDate()
+                    h = date.getHours()
+                    min = date.getMinutes()
+                    sec = date.getSeconds()
+                    time = y + "-" + m + "-" + d + "T" + h + ":" + min + ":" + sec + "Z"
+                    console.log(ele)
+                    tx.executeSql("Insert Into gpsTracks (x, y, ele, Time) VALUES (" + lon + "," + lat + "," + ele + ",'" + time + "')")
+                }, databaseError)
+            }
+
+            function posError(e){
+                alert("GPSFehler:" + e.code)
             }
 
             function pauseTrack(){
-
+                clearInterval(geoLocInterval)
             }
 
-            function stopTrack(){
+            function countTrack(){
+                db = window.openDatabase("GPS","1.0", "GPS Database", 200000);
+                db.transaction(function(tx) {
+                    tx.executeSql('SELECT COUNT(*) FROM gpsTracks;', [],
+                        function(tx, result)
+				            {
+					            var row = result.rows.item(0);
+					            alert("Number of rows in database: " + row["COUNT(*)"]);
+				            }
+                    );
+                }, databaseError);
+            }
 
+            function writegpx(){
+                if (debug == true){
+                    alert("write gpx")
+                }
+                db = window.openDatabase("GPS","1.0", "GPS Database", 200000); db = window.openDatabase("GPS","1.0", "GPS Database", 200000);
+                db.transaction(function(tx) {
+                    tx.executeSql('SELECT COUNT(*) FROM gpsTracks;', [],
+                        function(tx, result)
+				            {
+					            var row = result.rows.item(0);
+					            rowcount = row["COUNT(*)"];
+                                if (rowcount > 0){
+                                    writeGPXFile();
+                                }
+                                else{
+                                    alert("Keine Punkte in der Datenbank")
+                                }
+				            }
+                    );
+                }, databaseError);
+            }
+
+            function writeGPXFile(){
+                if (debug == true){
+                    alert("gpxfile")
+                }
+                var gpxtext = '<?xml version="1.0" encoding="UTF-8"?>\n' + '<gpx\n' + 'version = "1.1"\n' + 'creator = "See You App - see--you.ch - tgerzner production">\n' +
+                              '<trk>\n' + '<name>Track 001</name>\n' + ' <desc>Track#1</desc>\n' + '<trkseg>\n'
+
+
+                db.transaction(function(tx) {
+                    tx.executeSql('SELECT * FROM gpsTracks;', [],
+                        function(tx, result)
+                            {
+                                for (var i = 0; i < rowcount; i++){
+                                    var id = result.rows.item(i)["id"]
+                                    var x = result.rows.item(i)["x"]
+                                    var y = result.rows.item(i)["y"]
+                                    var ele = result.rows.item(i)["ele"]
+                                    var time = result.rows.item(i)["Time"]
+                                    var temp = result.rows.item(i)
+                                    gpxtext = gpxtext + '<trkpt lat="' + y + '" lon="' + x + '">\n' +
+                                                        ' <ele>' + ele +'</ele>\n' + ' <time>' + time + '</time>\n' + '</trkpt>\n'
+                                }
+                                gpxtext = gpxtext + '</trkseg>\n</trk>\n</gpx>\n'
+                                console.log(gpxtext)
+                                writeToFile(gpxtext);
+                            }
+                    );
+                }, databaseError);
+            }
+
+            function writeToFile(gpxtext){
+                if (debug == true){
+                    alert("writetofile")
+                }
+                window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+
+                function gotFS(fileSystem) {
+                    if (debug == true){
+                        alert("got fs")
+                    }
+                    fileSystem.root.getFile(vorname + nachname + "_" + alter + "_" + geschlecht + ".gpx", {create: true, exclusive: false}, gotFileEntry, fail);
+                }
+
+                function gotFileEntry(fileEntry) {
+                    if (debug == true){
+                        alert("fileentry")
+                    }
+                    fileEntry.createWriter(gotFileWriter, fail);
+                }
+
+                function fail(error) {
+                    alert(error.code);
+                }
+
+                function gotFileWriter(writer) {
+                    if (debug == true){
+                        alert("filewriter")
+                    }
+
+                    writer.write(gpxtext);
+                }
             }
 
             function uploadTracks(){
-
+                if (debug == true){
+                    alert("upload")
+                }
+                writegpx()
             }
         </script>
 
@@ -60,7 +202,7 @@
                <br />
                <button onclick="pauseTrack()">Track unterbrechen</button>
                <br />
-               <button onclick="stopTrack()">Stop Track</button>
+               <button onclick="countTrack()">Punkte zählen</button>
                <br />
                <button onclick="uploadTracks()">Upload Track</button>
                <br />
@@ -68,7 +210,7 @@
                 <br />
             </div><!-- /content -->
             <div id="footer" data-role="footer">
-                <h4><span>Copyright &copy; 2014</span></h4>
+                <h4><span id="name"></span></h4>
             </div><!-- /footer -->
         </div><!-- /page -->
 </body>

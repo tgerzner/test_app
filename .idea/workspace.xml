@@ -5,7 +5,7 @@
     <ignored path="test_app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/config.xml" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1390172054836" ignored="false" />
-    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392126808464" ignored="false" />
+    <file path="/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393423958573" ignored="false" />
     <file path="/main.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391072699288" ignored="false" />
     <file path="/upload.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391162243720" ignored="false" />
     <file path="/test.js" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391074063806" ignored="false" />
@@ -23,12 +23,13 @@
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
     <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
-    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391719543737" ignored="false" />
+    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393578408167" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
-    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392325923768" ignored="false" />
+    <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392327142420" ignored="false" />
     <file path="/a.dummy" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303127725" ignored="false" />
     <file path="/admin.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303196881" ignored="false" />
     <file path="D:/Code/django-see-you/admin.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303196881" ignored="false" />
+    <file path="$PROJECT_DIR$/../Noise_app/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393489854560" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +49,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="photos.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/photos.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="59" selection-start="5393" selection-end="5393" vertical-scroll-proportion="0.5328125">
+            <state line="70" column="20" selection-start="3011" selection-end="3712" vertical-scroll-proportion="-8.346154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gps.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gps.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="174" column="48" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.3326425">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S2 - Create &amp; Write To File/Program Files/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="20" selection-start="3011" selection-end="3712" vertical-scroll-proportion="-6.1764708">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gps.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gps.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0">
+            <state line="38" column="51" selection-start="1718" selection-end="1718" vertical-scroll-proportion="-24.846153">
               <folding />
             </state>
           </provider>
@@ -78,11 +79,11 @@
       <file leaf-file-name="photogallery.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photogallery.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="242" selection-start="2235" selection-end="2235" vertical-scroll-proportion="-13.307693">
+            <state line="67" column="0" selection-start="3314" selection-end="3315" vertical-scroll-proportion="-19.615385">
               <folding>
                 <marker date="1392208851829" expanded="false" signature="2058:2084" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
-                <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
+                <marker date="1392208851829" expanded="false" signature="2235:2261" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
                 <marker date="1392208851829" expanded="false" signature="2596:2622" placeholder="..." />
                 <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
@@ -109,6 +110,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/photos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="16" selection-start="2044" selection-end="2127" vertical-scroll-proportion="-13.730769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -129,12 +139,12 @@
         <option value="$USER_HOME$/Desktop/style.css" />
         <option value="$USER_HOME$/Desktop/style2.css" />
         <option value="$USER_HOME$/Desktop/test.html" />
-        <option value="$PROJECT_DIR$/gps.html" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/photogallery.html" />
         <option value="D:/Code/test.html" />
         <option value="$PROJECT_DIR$/photos.html" />
+        <option value="$PROJECT_DIR$/gps.html" />
       </list>
     </option>
   </component>
@@ -142,7 +152,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,6 +180,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,15 +213,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="D:/Code/django-see-you" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Noise_app" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
@@ -260,17 +298,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13320464" sideWeight="0.67085075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14285715" sideWeight="0.6715831" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284169" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -370,28 +408,17 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1331" column="0" selection-start="23369" selection-end="23369" vertical-scroll-proportion="0.33285093">
-          <folding />
-        </state>
+        <state line="1331" column="0" selection-start="23369" selection-end="23369" vertical-scroll-proportion="0.33285093" />
       </provider>
     </entry>
     <entry file="file://D:/error.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="1.1917404">
-          <folding />
-        </state>
+        <state line="1086" column="94" selection-start="166924" selection-end="166961" vertical-scroll-proportion="1.1917404" />
       </provider>
     </entry>
     <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S5 - Web SQL Database/Program Files/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="21" selection-start="1612" selection-end="1612" vertical-scroll-proportion="-0.65384614" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/upload.php">
@@ -413,13 +440,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="20" selection-start="3011" selection-end="3712" vertical-scroll-proportion="-8.346154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S2 - Create &amp; Write To File/Program Files/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="51" selection-start="1718" selection-end="1718" vertical-scroll-proportion="-24.846153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/photogallery.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="242" selection-start="2235" selection-end="2235" vertical-scroll-proportion="-13.307693">
+        <state line="67" column="0" selection-start="3314" selection-end="3315" vertical-scroll-proportion="-19.615385">
           <folding>
             <marker date="1392208851829" expanded="false" signature="2058:2084" placeholder="..." />
             <marker date="1392208851829" expanded="true" signature="2179:2196" placeholder="..." />
-            <marker date="1392208851829" expanded="true" signature="2235:2261" placeholder="..." />
+            <marker date="1392208851829" expanded="false" signature="2235:2261" placeholder="..." />
             <marker date="1392208851829" expanded="true" signature="2360:2377" placeholder="..." />
             <marker date="1392208851829" expanded="false" signature="2596:2622" placeholder="..." />
             <marker date="1392208851829" expanded="true" signature="2717:2734" placeholder="..." />
@@ -427,16 +468,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/photos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="20" selection-start="3011" selection-end="3712" vertical-scroll-proportion="-6.1764708">
+        <state line="54" column="16" selection-start="2044" selection-end="2127" vertical-scroll-proportion="-13.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos.html">
+    <entry file="file://$PROJECT_DIR$/gps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="59" selection-start="5393" selection-end="5393" vertical-scroll-proportion="0.5328125">
+        <state line="174" column="48" selection-start="7579" selection-end="7579" vertical-scroll-proportion="0.3326425">
           <folding />
         </state>
       </provider>
