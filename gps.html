@@ -35,7 +35,7 @@
                 db = window.openDatabase("GPS","1.0", "GPS Database", 200000);
                 db.transaction(function(tx) {
                     // Löschen der Punkte
-                    tx.executeSql('DROP TABLE gpsTracks')
+                    //tx.executeSql('DROP TABLE gpsTracks')
                     tx.executeSql('CREATE TABLE IF NOT EXISTS gpsTracks (id INTEGER PRIMARY KEY AUTOINCREMENT, x REAL, y REAL, ele REAL, Time TEXT)');
                     geoLocInterval = setInterval(getGeoLoc,3000)
                 }, databaseError);
@@ -44,7 +44,7 @@
 
             // Database error handler
             function databaseError(error) {
-                alert("SQL Error: " + error.code + error.msg);
+                alert("SQL Error: " + error.code);
             }
 
             function getGeoLoc(){
