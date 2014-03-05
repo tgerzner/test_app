@@ -159,13 +159,14 @@
                 if (debug == true){
                     alert("writetofile")
                 }
+                var filename = vorname + nachname + "_" + alter + "_" + geschlecht + ".gpx"
                 window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
 
                 function gotFS(fileSystem) {
                     if (debug == true){
                         alert("got fs")
                     }
-                    fileSystem.root.getFile(vorname + nachname + "_" + alter + "_" + geschlecht + ".gpx", {create: true, exclusive: false}, gotFileEntry, fail);
+                    fileSystem.root.getFile(filename, {create: true, exclusive: false}, gotFileEntry, fail);
                 }
 
                 function gotFileEntry(fileEntry) {
@@ -185,7 +186,48 @@
                     }
 
                     writer.write(gpxtext);
+                    uploadFile(filename)
                 }
+            }
+
+            function uploadFile(filename){
+                var options = new FileUploadOptions();
+                options.fileKey="file";
+                options.fileName=filename
+                var project = localStorage.getItem("project")
+
+                var params = new Object();
+                params.value1 = project;
+
+                options.params = params;
+                options.chunkedMode = false;
+                var ft = new FileTransfer();
+
+                ft.upload(filename,
+                    "http://see--you.ch/photos/upload_gpx.php",
+                    function(result) {
+                        if (debug == true){
+                            alert("upload successful")
+                        }
+                        var seeYouUrl = "http://app.see--you.ch/appupload/?project=" + project + "&filename=" + filename;
+                        $.ajax({url: seeYouUrl, success:function(result){
+                            if (result == "<h1>Track gespeichert</h1>"){
+                                if (debug == true){
+                                    alert("Track erstellt")
+                                }
+                            }
+                            else {
+                                if (debug == true){
+                                    alert("Es lief was schief")
+                                }
+                            };
+                        }})
+                    },
+                    function(error) {
+                        alert("Fail")
+
+                    },
+                    options);
             }
 
             function uploadTracks(){
