@@ -23,7 +23,7 @@
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
     <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
-    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394034332670" ignored="false" />
+    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394035096896" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393860817367" ignored="false" />
     <file path="/a.dummy" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303127725" ignored="false" />
@@ -61,16 +61,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gps.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gps.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="44" selection-start="8814" selection-end="8814" vertical-scroll-proportion="-22.884615">
+            <state line="204" column="42" selection-start="8643" selection-end="8643" vertical-scroll-proportion="0.70051813">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload_gpx.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="upload_gpx.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Desktop/upload_gpx.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
@@ -525,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gps.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="44" selection-start="8814" selection-end="8814" vertical-scroll-proportion="-22.884615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/upload_gpx.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -542,6 +535,13 @@
     <entry file="file://$USER_HOME$/Desktop/upload_gpx.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="42" selection-start="8643" selection-end="8643" vertical-scroll-proportion="0.70051813">
           <folding />
         </state>
       </provider>
