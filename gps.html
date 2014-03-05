@@ -173,9 +173,14 @@
                     if (debug == true){
                         alert("fileentry" + fileEntry.fullPath)
                         path = fileEntry.fullPath
+                        window.resolveLocalFileSystemURI(fileEntry.fullPath,onResolveSuccess, fail)
                     }
                     fileEntry.createWriter(gotFileWriter, fail);
                 }
+                function onResolveSuccess(fileEntry) {
+                    alert(fileEntry.name);
+                }
+
 
                 function fail(error) {
                     alert(error.code);
