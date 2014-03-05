@@ -23,7 +23,7 @@
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
     <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
-    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394031196603" ignored="false" />
+    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394034332670" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393860817367" ignored="false" />
     <file path="/a.dummy" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303127725" ignored="false" />
@@ -32,6 +32,7 @@
     <file path="$PROJECT_DIR$/../Noise_app/index.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393489854560" ignored="false" />
     <file path="/Kurz repetition Intelis.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393876500958" ignored="false" />
     <file path="/ili.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393861080816" ignored="false" />
+    <file path="/upload_gpx.php" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394033945793" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,25 +55,34 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="79" selection-start="3978" selection-end="3978" vertical-scroll-proportion="-17.5">
+            <state line="87" column="79" selection-start="3978" selection-end="3978" vertical-scroll-proportion="-56.73077">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gps.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gps.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="17" selection-start="7974" selection-end="7974" vertical-scroll-proportion="0.5243523">
+            <state line="210" column="44" selection-start="8814" selection-end="8814" vertical-scroll-proportion="-22.884615">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/upload.php">
+      <file leaf-file-name="upload_gpx.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Desktop/upload_gpx.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="82" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -115,7 +125,7 @@
       <file leaf-file-name="photos.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="20" selection-start="4066" selection-end="5986" vertical-scroll-proportion="-9.038462">
+            <state line="101" column="21" selection-start="3700" selection-end="3700" vertical-scroll-proportion="-0.5769231">
               <folding />
             </state>
           </provider>
@@ -131,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$USER_HOME$/Desktop/test.js" />
         <option value="D:/Eduonix/Mobile App Developement Course/Chapter 5 - File &amp; Storage/S4 - Local Storage/Program Files/index.html" />
         <option value="D:/error.log" />
         <option value="$USER_HOME$/Desktop/style.css" />
@@ -146,6 +155,7 @@
         <option value="D:/Übung GeosPro/Repetition Interlis/ili.html" />
         <option value="D:/Übung GeosPro/Repetition Interlis/Kurz repetition Intelis.html" />
         <option value="$USER_HOME$/Desktop/upload.php" />
+        <option value="$USER_HOME$/Desktop/upload_gpx.php" />
         <option value="$PROJECT_DIR$/gps.html" />
       </list>
     </option>
@@ -383,20 +393,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Code/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="7" selection-start="0" selection-end="1717" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="69" selection-start="2686" selection-end="2686" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Übung GeosPro/Repetition Interlis/Kurz repetition Intelis.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="81" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.0">
@@ -508,30 +504,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="82" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="20" selection-start="4066" selection-end="5986" vertical-scroll-proportion="-9.038462">
+        <state line="101" column="21" selection-start="3700" selection-end="3700" vertical-scroll-proportion="-0.5769231">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="79" selection-start="3978" selection-end="3978" vertical-scroll-proportion="-17.5">
+        <state line="87" column="79" selection-start="3978" selection-end="3978" vertical-scroll-proportion="-56.73077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="17" selection-start="7974" selection-end="7974" vertical-scroll-proportion="0.5243523">
+        <state line="210" column="44" selection-start="8814" selection-end="8814" vertical-scroll-proportion="-22.884615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/upload_gpx.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/upload_gpx.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

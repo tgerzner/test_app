@@ -203,13 +203,15 @@
                 var project = localStorage.getItem("project")
 
                 var params = new Object();
-                params.value1 = project;
+                params.value1 = filename;
+                params.value2 = project;
+
 
                 options.params = params;
                 options.chunkedMode = false;
                 var ft = new FileTransfer();
 
-                ft.upload(path,
+                ft.upload(filename,
                     "http://see--you.ch/photos/upload_gpx.php",
                     function(result) {
                         if (debug == true){
