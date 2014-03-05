@@ -23,7 +23,7 @@
     <file path="/forms.py" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391637782369" ignored="false" />
     <file path="/applogin.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391640019746" ignored="false" />
     <file path="/photogallery.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392208800768" ignored="false" />
-    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394014679494" ignored="false" />
+    <file path="/gps.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1394029609083" ignored="false" />
     <file path="D:/Code/django-see-you/templates/si_hitec/comments.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1391783453642" ignored="false" />
     <file path="/photos.html" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1393860817367" ignored="false" />
     <file path="/a.dummy" changelist="6ee9856b-6376-4725-9a4a-e136135739c6" time="1392303127725" ignored="false" />
@@ -63,7 +63,7 @@
       <file leaf-file-name="gps.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="96" selection-start="8879" selection-end="8879" vertical-scroll-proportion="0.43626943">
+            <state line="226" column="65" selection-start="9598" selection-end="9598" vertical-scroll-proportion="0.70051813">
               <folding />
             </state>
           </provider>
@@ -531,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gps.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="96" selection-start="8879" selection-end="8879" vertical-scroll-proportion="0.43626943">
+        <state line="226" column="65" selection-start="9598" selection-end="9598" vertical-scroll-proportion="0.70051813">
           <folding />
         </state>
       </provider>
