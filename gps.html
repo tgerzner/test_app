@@ -171,7 +171,8 @@
 
                 function gotFileEntry(fileEntry) {
                     if (debug == true){
-                        alert("fileentry")
+                        alert("fileentry" + fileEntry.fullPath)
+                        path = fileEntry.fullPath
                     }
                     fileEntry.createWriter(gotFileWriter, fail);
                 }
@@ -186,11 +187,11 @@
                     }
 
                     writer.write(gpxtext);
-                    uploadFile(filename)
+                    uploadFile(path, filename)
                 }
             }
 
-            function uploadFile(filename){
+            function uploadFile(path,filename){
                 var options = new FileUploadOptions();
                 options.fileKey="file";
                 options.fileName=filename
@@ -203,7 +204,7 @@
                 options.chunkedMode = false;
                 var ft = new FileTransfer();
 
-                ft.upload(filename,
+                ft.upload(path,
                     "http://see--you.ch/photos/upload_gpx.php",
                     function(result) {
                         if (debug == true){
